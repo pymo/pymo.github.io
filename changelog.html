@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+<title>changelog</title>
+</head>
+<style>
+html{font-size:14px; color:#000; font-family:'微软雅黑';}
+</style>
+<body>
+[2013.03.02]<br>
+- v0.9.0<br>
+- 加入#chara_anime、#config指令<br>
+- #select_text、#select_var、#select_img、#album、存读档界面支持触摸操作<br>
+- 系统菜单中增加截图功能，截图存储在save文件夹<br>
+- #chara_scroll可以从当前立绘位置开始滚动<br>
+- #say 和 #text 中可以用\r表示不停顿的换行<br>
+- 如果#scroll指定的图片是当前的bg，那么带着当前显示的立绘一起滚动<br>
+- #load指令可以指定存档号<br>
+- #album指令可以指定列表文件名<br>
+- 图片鉴赏中大图片滚动展示<br>
+- 存读档界面加入背景（为当前bg内容）<br>
+- 如果save文件夹不存在则自动创建<br>
+- 修正存档不能保存bg坐标的bug<br>
+- 修正在Android 4.1上找不到游戏的问题<br>
+- android版chara改为和bg同一缩放比例<br>
+- android和PC版可以使用自定义的ttf字体（命名为default.ttf，放在system文件夹下）<br>
+<p>
+[2012.09.08]<br>
+- v0.8.0<br>
+- 解决读取图片时内存不足的问题<br>
+- 改善排版算法<br>
+- #say和#text支持<br>
+换行<br>
+- #text参数增加<br>
+- 增加#text_off指令<br>
+- 修正读档时不清除当前已存在变量的错误<br>
+- #select_var和#select_img时可存档（通过init_highlight参数设置）
+<p>
+[2012.08.07]<br>
+- v0.7.0
+- 修正0.6版在某些机型上显示不够流畅的问题<br>
+- 增加select_var、select_img、chara_y、chara_scroll、anime_on、anime_off指令<br>
+- 支持中文文件名打包<br>
+- 自动生成CG鉴赏缩略图功能<br>
+- 修正call指令可能引起的存档变大问题<br>
+- 修正读档时会覆盖全局变量的问题<br>
+- 修正读取低版本gameconfig时出现的“gameconfig.txt损坏”错误<br>
+- 采用新存档格式，0.6版及以下的pymo不能读取0.7版生成的存档，但0.7版可读取旧版存档。
+<p>
+[2012.05.07]<br>
+- v0.6.0<br>
+- 增加scroll、chara_quake、chara_up、chara_down、rand指令<br>
+- bg切换效果支持遮片<br>
+- 支持设定对话框内文字的显示范围<br>
+- 按左方向键隐藏对话框功能<br>
+- 自动存档功能<br>
+- 游戏菜单中显示时间<br>
+- 修正Symbian^3下的字体剃尾问题<br>
+- 修正Symbian^3下无切换特效的问题<br>
+- 安装程序自带icon_mask.png和keypad.png<br>
+- 识别所有盘符下Python文件夹里的游戏
+<p>
+[2012.02.14]<br>
+- v0.5.0<br>
+- 修正0.4版运行缘之空时，在悠游泳／溺水的剧情处跳出的问题<br>
+- 能识别C、E、F盘下Python文件夹里的游戏<br>
+- 后台运行时暂停和静音<br>
+- 游戏菜单中可以按右软键返回<br>
+- 改善了字体搜索功能
+<p>
+[2012.01.22]<br>
+- v0.4.0<br>
+- 启用pymo自定义的指令集<br>
+- 加入图片、音效打包功能<br>
+- 加入更换对话框指令
+<p>
+[2011.12.24]<br>
+- v0.3.0<br>
+- 修正Symbian^3设备无声问题<br>
+- 修正Symbian^3设备上虚拟键盘消失问题<br>
+- 加入CG鉴赏和音乐鉴赏功能<br>
+- 修复打开语音文件时的KErrOverflow错误
+<p>
+[2011.08.08]<br>
+- v0.2.0<br>
+- 支持S60v5、Symbian^3设备<br>
+- 菜单中加入返回标题画面、对话记录功能<br>
+- 存档增加至100个，能记忆上次存读档位置<br>
+- 选择肢处可存档<br>
+- 加入字体平滑选项<br>
+- 加入已选项变灰功能<br>
+- 选择肢提示可关闭<br>
+- 加入语音文件打包功能<br>
+- 加入CALL、load、select_text指令，加入音乐相关指令用于制作ED<br>
+- 取消竖屏设备的屏幕方向设置
+<p>
+[2011.07.23]<br>
+- v0.1.0<br>
+- 支持jpg、bmp、png等多种图片格式和wav、mp3、amr、aac、midi等多种音频格式<br>
+- 图片支持256级透明度<br>
+- 音频文件大小和长度不限<br>
+- 支持BGM、语音和音效同时播放<br>
+- 立绘大小随意，支持同屏显示任意数量立绘，可以设置立绘的位置和图层顺序<br>
+- 选择肢支持动画提示<br>
+- 自适应横屏和竖屏设备，竖屏设备可以由用户设置屏幕方向。<br>
+- 30个存档<br>
+- 用户可设置字体和字号<br>
+- 支持多个游戏共存<br>
+- 使用资源预取机制，提升流畅度
+</body>
+</html>

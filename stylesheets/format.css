@@ -1,0 +1,46 @@
+﻿@charset "UTF-8";
+/* part of this template comes from http://www.w3school.com.cn/index.html */
+h3{
+	font-size:16px;
+}
+.togglebody {
+	border-width: 1px;
+	border-color: #E3E3E3;
+	border-style: solid;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius: 5px;
+	background-color: #FFF;
+	color: #000;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.toggleheader{
+	margin: 0px;
+}
+
+.screenshots{
+	width:100%;
+	height:auto;
+	overflow-x:scroll; 
+	border:0;
+	white-space:nowrap;
+}
+
+.gametitle_table {
+    width:100%;
+	margin-top: 5px;
+    border:0;
+    font-size:16px;
+	background-color: #E3E3E3;
+}
+.gametitle_table tr {
+    margin: 0;
+}
+.gametitle_table td {
+    margin:0;
+    padding:0;
+    width:50%;
+}

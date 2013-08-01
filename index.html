@@ -1,0 +1,431 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>pymo-手机上的GalGame引擎</title>
+<link href="stylesheets/format.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=500, initial-scale=0.64, user-scalable=yes"/>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="layer/layer.min.js"></script>
+<!--<script src="https://raw.github.com/tuupola/jquery_lazyload/master/jquery.lazyload.min.js"></script>-->
+<style>
+html{background-color:#E3E3E3; font-size:14px; color:#000; min-width: 500px; max-width: 1024px; overflow:scroll; margin-left: auto; margin-right: auto; font-family:'微软雅黑'}
+
+a,a:hover{ text-decoration:none;}
+
+pre{font-family:'微软雅黑'}
+.box{padding:20px; background-color:#fff; margin:10px 20px; border-radius:5px;}
+.box a{padding-right:15px;}
+#install_hide{display:none}
+#changelog_hide{display:none}
+.layer_text{background-color:#fff; padding:20px;}
+.layer_text p{margin-bottom: 10px; text-indent: 2em; line-height: 23px;}
+.button{display:inline-block; *display:inline; *zoom:1; line-height:30px; padding:0 20px; background-color:#56B4DC; color:#fff; font-size:14px; border-radius:3px; cursor:pointer; font-weight:normal;}
+
+.juan{ padding:10px; text-align:left;}
+.juan p{line-height:23px;}
+.juan p a{font-size:14px;}
+.juanGo, .juanLu{display:inline-block; *display:inline; *zoom:1; margin-right:10px;  line-height:30px; padding:0 15px;}
+.juanGo{border:1px solid #F67600; background-color:#FFA100; color:#fff;}
+.juanGo:hover{background-color:#FFB12F; color:#fff;}
+.juanLu{border:1px solid #B3B3B3; padding:0 20px; background-color:#FDFDFD; color:#595959;}
+.juanLu:hover{border:1px solid #888;}
+
+</style>
+<body>
+
+<div class="box" style="padding:0;
+background: url(images/index_idg.jpg) no-repeat right;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;">
+<pre>
+<div style="margin-left:40px; ">
+<div  align="left" style="text-shadow:white 1px 2px 1px;">
+<h2>pymo，手机上的GalGame引擎</h2>
+软件版本：0.9
+更新时间：2013-03-13
+支持系统：Symbian/Android/Windows
+</div>
+<span class="button" id="download_pymo" style="background-color:orange; margin-top:20px; margin-left:40px;">立即下载</span><span class="button" id="install_pymo" style="margin-left:20px;">安装方法</span>
+</div>
+</pre>
+</div>
+<div class="box">
+<h2>游戏列表</h2>
+<!-- ------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid9')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>120日元全集</u></td><td align="right">发布日期：2012-04-20</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid9" class="togglebody">
+    移植者：chen_xin_ming<br>
+    原发布地址：http://www.yayabo.cn/thread-23037-1.html<br>
+    <h3>游戏介绍</h3>
+    120日元分为冬、夏、秋、春（按顺序）四部另加夏番外篇，并且都有各自所含的的意义。<br>
+    四部作品都以120日元为主线而发生的一系列故事，四位男主角被命运女神安排分别于各自的女主角邂逅，而最终领悟到了人生真理。<br>
+    60亿分之一的概率，如果你和谁邂逅的话，会发生些什么呢？邂逅是偶然，还是必然的命中注定？如果和谁邂逅是命中注定的话，那样大概也不错吧。
+    <h3>汉化组成员</h3>
+    GalGames Mix 论坛<br>
+    STAFF（夏）：<br>
+    北へ、MAGICWING、鳄鱼、Sayuri、rainmaker、SIN<br>
+    <br>
+    STAFF（冬）：<br>
+    企划:MAGICWING 北へ<br>
+    监制:MAGICWING 北へ<br>
+    监督:MAGICWING<br>
+    翻译:北へ<br>
+    校译:basaka Sayuri<br>
+    程序:MAGICWING<br>
+    润色:鳄鱼 浩之 MAGICWING 北へ<br>
+    校对:鳄鱼 浩之 MAGICWING<br>
+    测试:鳄鱼 MAGICWING 北へ<br>
+    <br>
+    STAFF（春、秋）：<br>
+    kyon、crack、zephyr、北へ、Sayuri、MAGICWING
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467653&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh5.googleusercontent.com/-ZDYYmocHbWA/Ufm4pKV_O5I/AAAAAAAAAhc/8rogo_0KCMg/s800/120_1.jpg"><img src="http://lh5.googleusercontent.com/-vhFVwGDwxQ4/Ufm4pLCPZtI/AAAAAAAAAhs/YWJxVP6aHRY/s800/120_3.jpg"><img src="http://lh3.googleusercontent.com/-ZI3OE3dTUPc/Ufm4pBH5F4I/AAAAAAAAAhk/igX13z1YdOE/s800/120_4.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid8')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>月姬</u></td><td align="right">发布日期：2012-04-11</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid8" class="togglebody">
+    移植者：Hentai君，119<br>
+    原发布地址：http://www.yayabo.cn/thread-22938-1.html<br>
+    <h3>游戏介绍</h3>
+    月姬属于典型的 文字冒险游戏 ，玩家只需对特定选项作出选择即可推动剧情发展（即电子小说形式）。<br>
+    故事描述主人公 远野志贵 在八年前的意外中，获得了可杀死事物的“直死之魔眼”。由于对自己的新能力的恐惧，他在当天逃离了医院，并邂逅了一个名为 苍崎青子 的魔法师，在她的帮助下，魔眼的能力得以用一副眼镜封印起来。之后的八年间，志贵作为养子在远野的分家有间家度过。八年平凡的日子后，由于父亲的去世，他被成为远野家新家主的妹妹秋叶召回远野家。就在生活突然发生巨大改变之时，志贵不自觉的利用直死之魔眼杀死了一名女性，但第二天女性像是没发生过似的站在他眼前。<br>
+    “杀死我的责任，你打算怎么负责呢？”纯白的吸血姬这么说着。<br>
+    月姬共五条主线，分为公主篇（Arcueid线、Ciel线），远野篇（ 远野秋叶 线、 琥珀 线、翡翠线）。<br>
+    完成五线剧情后，在开始菜单可以进入“月蚀”选项。
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467652&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/-t1y8Q_pJ4-A/UfmUMy0uuMI/AAAAAAAAAhA/iQiugEK8pNY/s800/Tukihime_1.jpg"><img src="http://lh4.googleusercontent.com/-xRzeBsT6BBc/UfmUMxiDsNI/AAAAAAAAAhA/_pwNn46-GZM/s800/Tukihime_2.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid7')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>花吻在上1</u></td><td align="right">发布日期：2012-02-19</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid7" class="togglebody">
+    移植者：黑之契约者<br>
+    原发布地址：http://bbs.acgfuture.com/forum.php?mod=viewthread&tid=23076<br>
+    感谢推倒穹妹的手打命令移植的ONS版<br>
+    感谢chen大帮忙做的V3版CG鉴赏背景图，以及他提出的宝贵意见<br>
+    感谢汉化组的汉化，没有他们我们也玩不到这部好的作品
+    <h3>游戏介绍</h3>
+    亲吻那片花瓣（その花びらにくちづけを），又名花吻，花吻在上，花瓣，是由同人游戏社团河豚屋（ふぐり屋）所制作并发行的**同人视觉小说游戏系列，以及同名轻小说和广播剧。截至2010年5月，已发布8部游戏作品<br>
+    此系列游戏的故事背景皆是在“圣米卡艾鲁女子学院”（圣ミカエル女子学园，简称为米卡女校）展开的，内容则分别为在此学习的几对女孩子的恋情故事。剧情均为百合式，也表现出较高的成人度。每部作品均采用单线剧情，存在选项
+    <h3>制作人员名单</h3>
+    程序/美工/封装/发布：土豆猫（MTF）<br>
+    螺 旋（MTF）<br>
+    翻译：光流 （百合会）<br>
+    翼羽 （百合会）<br>
+    花雪 （百合会）<br>
+    土豆猫 （MTF）<br>
+    指尖奶茶应援会/Milk Tea Fans Club
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467651&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh5.googleusercontent.com/-n1uYoV0t8fA/UfmRqB1PITI/AAAAAAAAAgM/F8X1MggDrjo/s800/hana1_1.jpg"><img src="http://lh4.googleusercontent.com/-g24aUDq10Qk/UfmRqNgyABI/AAAAAAAAAgg/KxTh8XutK9E/s800/hana1_2.jpg"><img src="http://lh6.googleusercontent.com/-LIjbjs3Bnno/UfmRqB9w0jI/AAAAAAAAAgU/hiiyDIno_AU/s800/hana1_3.jpg"><img src="http://lh6.googleusercontent.com/-YWIQoz7SdwQ/UfmRqV7n5kI/AAAAAAAAAgY/U8uEuyD1x_A/s800/hana1_4.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid6')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>eden*</u></td><td align="right">发布日期：2012-02-17</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid6" class="togglebody">
+    移植者：黑之契约者<br>
+    原发布地址：http://www.yayabo.cn/thread-22410-1.html<br>
+    虽然ONS上已经有了，但是在塞班上还是PYMO的体验更好<br>
+    感谢封魔夜君 KID制作组 HY，正是有这些大大们的脚本让移植工作变得轻松不少<br>
+    感谢音羽教会的汉化<br>
+    感谢pymo引擎的开发者chen_xin_ming大大 他也为我在这次的移植中提出了不少建议和帮助，而且那种一丝不苟的态度很让我感到钦佩<br>
+    没有鉴赏模式<br>
+    <h3>游戏介绍</h3>
+    概要<br>
+    作品是minori的第6部作品，也是在继取得成功的《ef - a fairy tale of the two.》之后的作品。在本作中，原作和脚本完全由镜游负责；而在前作中和镜游一起负责原作和脚本的御影则负责监督。在minori多部作品中负责人物设定和原画的七尾奈留则没有参与制作，改由ちこたむ、KIMちー负责。<br>
+    作为恋爱冒险游戏，作品以流水式的叙事为主，带有比较紧张的战斗情节。作品首次采取1024×640的宽屏画面，以加强游戏的表现效果，务求使玩家感觉犹如观赏电影。<br>
+    游戏的全年龄对象版本在2009年9月18日发行；此外，追加本作的18x要素的“eden* PLUS＋MOSAIC”也同时发行。<br>
+    故事情节<br>
+    在地球遥远的未来，由于火星附近出现了巨大的能量体，使地球发生了各种变异，从而引发了全球性的战争和恐怖主义，地球在毁灭性的打击下离灭亡只剩下100年。<br>
+    为了赶在100年内离开地球，人类制定了“地球脱出计划”。而为了实现这个计划，又建立了“地球统一政府”以打压异己和集中一切可利用资源；另一方面，为了解决人类智慧和肉体的局限性以保证计划的延续性，又制定了“地球脱出计划”的核心“Felix计划”——通过基因改造，获得高智能的长生不老的生命体，即“Felix”。本作的女主角紫苑（シオン）即为其中一名Felix。<br>
+    国际性战争结束后，原特殊部队成员榛名亮被派往第703研究所，与紫苑邂逅。而亮的任务就是守护这个为“地球脱出计划”奉献了一生的少女，以及限制她的自由，还有守护她前往死亡的乐园……
+    <h3>汉化组成员</h3>
+    企划：雨宫优子<br>
+    翻译：雨宫优子，宫村みやこ，叶月和织<br>
+    校对：火村夕<br>
+    润色：カレン<br>
+    影音翻译：小鸟炒饭<br>
+    改图：ｍａｇａｍｉ<br>
+    ｍｏｖｉｅ字幕：ｖｏｌｅｎｃｅ<br>
+    程序：ｍａｇａｍｉ
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467649&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/-gqpktq64TUU/Ufm4s_8uJyI/AAAAAAAAAi8/RO73VjyS6Tc/s800/eden02.jpg"><img src="http://lh5.googleusercontent.com/-dwiBHf8HeuA/Ufm4sylUi5I/AAAAAAAAAjA/vCTT5zLGSXQ/s800/eden03.jpg"><img src="http://lh6.googleusercontent.com/-ynr0ge5kONI/Ufm4t3mdfFI/AAAAAAAAAjc/93D2PGU9BKY/s800/eden04.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid5')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>沙耶之歌</u></td><td align="right">发布日期：2012-02-14</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid5" class="togglebody">
+    原发布地址：http://www.yayabo.cn/thread-22387-1.html<br>
+    <h3>游戏介绍</h3>
+    《沙耶之歌》是一部游戏吗？不是。<br>
+    《沙耶之歌》是一部电子小说吗？不是<br>
+    《沙耶之歌》是一部毁在商业运作和制作之下的完美艺术作品。<br>
+    这个故事通篇充斥着血肉、黏液、腐烂和异臭，然而她却又纯洁得不能再纯洁，恶臭和血肉中的世界，吃人内脏的情侣，他们的爱情丝毫无垢，所有人接触《沙耶之歌》后恐怕都会有下面的疑问：腐肉和鲜活的人谁更干净？异类和人类谁才是正常的？究竟什么是腐臭，什么是芬芳？<br>
+    主人公失去“正常”感知之后的世界，和你我眼中的这个世界，哪一个更加恐怖？<br>
+    在别人的眼中，你究竟是一个“人”还是一个“怪物”……？<br>
+    故事的主人公是两个陷入无穷绝望，一直孤独地生活在各自的世界，惊恐地却又没有选择地活在不属于自己的世界，并且相互爱上了异种族生物的二人。
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=436109&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/-rY36FNpX3hM/Ufm4u48S10I/AAAAAAAAAkI/mmPLnU9koaQ/s800/saya02.jpg"><img src="http://lh3.googleusercontent.com/-YwWIIMiBunA/Ufm4u2KOVEI/AAAAAAAAAj0/YGQzh25dp4o/s800/saya03.jpg"><img src="http://lh3.googleusercontent.com/-jdAAWnKS2Ec/Ufm4vGNBoCI/AAAAAAAAAkE/52vw2m5gQVI/s800/saya04.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid4')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>悠之空</u></td><td align="right">发布日期：2012-01-22</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid4" class="togglebody">
+    原发布地址：http://www.yayabo.cn/thread-22154-1.html<br>
+    <h3>游戏介绍</h3>
+    悠之空（ハルカナソラ）是日本游戏社Sphere于2009年9月25日发售的成人向游戏（恋爱冒险ADV类）。是该社前作游戏缘之空的后续作品。主要讲述主人公春日野悠与班长仓永 梢、伊福部 八寻和双胞胎妹妹春日野 穹的故事。
+    <h3>特别感谢</h3>
+    本次移植经授权使用了星空网“Sphere 中文化委员会”的汉化文本，十分感谢汉化组大大们的辛勤付出！有了他们的艰辛付出，我们这些不懂日文的玩家才能够体验到如此优秀的游戏。<br>
+    下面是汉化组STAFF（排名不分先后）：<br>
+    <br>
+    项目策划：WAR3ANDC.S、赤翼之天使<br>
+    项目监督：WAR3ANDC.S<br>
+    项目技术：Proger_XP、WAR3ANDC.S<br>
+    项目翻译：Alsy、赤翼之天使、聖人タマ、雨￠音-紫浰、萌即推、常夏之扉、けいか、初音 うみ<br>
+    项目校对：Alsy、赤翼之天使、雨￠音-紫浰<br>
+    项目润色：Alsy<br>
+    项目审稿：Alsy<br>
+    项目美工：Jansai、Lazzy、yukiking<br>
+    项目测试：雨萧萧、WAR3ANDC.S<br>
+    吉 祥 物：名雪君<br>
+    捣 乱 者：糸色路、赤月<br>
+    特别鸣谢：Proger_XP、Alsy、“星空网-命の旅团工作室-Sphere 中文化委员会”全体成员<br>
+    项目发布：星空网<br>
+    <br>
+    Sphere 中文化委员会<br>
+    www.seikuu.com
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467646&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/-zmfWlYSv3JE/Ufm4tB9FrdI/AAAAAAAAAjM/Nytuw-VfYds/s800/haruka02.jpg"><img src="http://lh4.googleusercontent.com/-I18RQ82Yar8/Ufm4t9ADqLI/AAAAAAAAAjQ/_vO48I7sluY/s800/haruka03.jpg"><img src="http://lh6.googleusercontent.com/--91T6Wx2gZI/Ufm4uXkj5jI/AAAAAAAAAjs/0DvZh3FRGZw/s800/haruka04.jpg"><img src="http://lh3.googleusercontent.com/-SVVZLmRY73s/Ufm4uV68slI/AAAAAAAAAjk/v8k4GDouU30/s800/haruka05.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid3')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>缘之空</u></td><td align="right">发布日期：2012-01-01</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid3" class="togglebody">
+    原发布地址：http://www.yayabo.cn/thread-21936-1.html<br>
+    <h3>游戏介绍</h3>
+    缘之空（ヨスガノソラ）是CUFFS社的新姐妹品牌"Sphere”于2008年12月5日发售于PC平台的一款成人向游戏（恋爱冒险类AVG），讲述了双 亲因意外事故而丧生而变得无依无靠的主人公搬到无人居住的祖父的家中生活的故事。《缘之空》是一部旨在令人痛哭疾首（感人）又处于争议之中的作品，其兄妹 主线更是成为一大争论焦点。 
+    <h3>特别感谢</h3>
+    本次移植经授权使用了星空网“Sphere 中文化委员会”的汉化文本，特此感谢，下面是汉化组STAFF（排名不分先后）：<br>
+    <br>
+    项目策划：WAR3ANDC.S、赤翼之天使、Jansai<br>
+    项目监督：WAR3ANDC.S、赤翼之天使<br>
+    项目技术：Proger_XP、WAR3ANDC.S<br>
+    项目翻译：Alsy、赤翼之天使、雨宫优子、宫村宫子、聖人タマ、けいか、天方夜谭、雨￠音-紫浰、WAR3ANDC.S<br>
+    项目校对：Alsy、Amemiya、聖人タマ、雨￠音-紫浰、五十岚光一、初音 うみ<br>
+    项目润色：Alsy、Amemiya、天界白魔导、名雪君、WAR3ANDC.S、井上 瞬<br>
+    项目审稿：Alsy、WAR3ANDC.S<br>
+    项目美工：kevinpen、七弦墨琴<br>
+    项目测试：WAR3ANDC.S、雨萧萧、幽夜之噬、alinysaber、eeblue、解夏、zqcde、陵祈、shuin、凤玄音<br>
+    中 文 站：Jansai<br>
+    吉 祥 物：名雪君<br>
+    捣 乱 者：糸色路<br>
+    特别鸣谢：Proger_XP、Alsy、Amemiya、Zeas、Yucie、“星空网-命の旅团工作室-Sphere 中文化委员会”全体成员<br>
+    项目发布：星空网、绝对萌域<br>
+    Sphere 中文化委员会<br>
+    www.seikuu.com 
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467645&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh6.googleusercontent.com/-xCz89tqoADM/Ufm4vY4vILI/AAAAAAAAAkA/aZRmggcuEMc/s800/yosuga02.jpg"><img src="http://lh5.googleusercontent.com/-p23DE8WZL1c/Ufm4v8xQPLI/AAAAAAAAAkU/Tf4ecWRFo2A/s800/yosuga03.jpg"><img src="http://lh5.googleusercontent.com/-WiNaGY-jdxo/Ufm4wQMmSoI/AAAAAAAAAkg/K0PIlHoj7tw/s800/yosuga04.jpg"><img src="http://lh3.googleusercontent.com/-TWQUQ5_FxWY/Ufm4wcwY-vI/AAAAAAAAAkc/g_kb_zH_Yhs/s800/yosuga05.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid2')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>秋之回忆2</u></td><td align="right">发布日期：2011-12-24</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid2" class="togglebody">
+    移植者：chen_xin_ming<br>
+    原发布地址：http://www.yayabo.cn/thread-21860-1.html<br>
+    完整移植！KID社最为成功的一部秋之回忆系列作品登陆S60平台！700M容量，全语音、全剧情。正传、雪萤、After Story和Append Stories统统包括，更有Q版人物提示、CG和音乐鉴赏系统，还等什么呢？
+    <h3>游戏介绍</h3>
+    故事发生在第一集前代“澄空町”邻近的“樱峰町”内，主角 伊波健 是一名平凡的高三学生，由于其父亲去年五月开始已一直忙于工作，所以留下了主角一人住在公寓“朝风庄”内。 他有一位可爱的女友叫“白河萤”，由圣诞开始交往，两人一直相处融洽。可是暑假的一天，却发生了一些小误会，令他们二人的恋情起了变化…… 
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467643&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/--Isl6Bkt27Y/Ufm4qo0HMgI/AAAAAAAAAiM/UkldsRXJvz0/s800/MO2_1.jpg"><img src="http://lh4.googleusercontent.com/-PC_leqx7ln0/Ufm4q2gXcgI/AAAAAAAAAiQ/hFkr7ghYbzc/s800/MO2_4.jpg"><img src="http://lh3.googleusercontent.com/-kkiHsIE7qqw/Ufm4rmP34VI/AAAAAAAAAig/Ui1u6ZdOaH4/s800/MO2_5.jpg"><img src="http://lh6.googleusercontent.com/-s8iNGylOX1Y/Ufm4rtLawDI/AAAAAAAAAik/Ywaw84y-1iY/s800/MO2_6.jpg"><img src="http://lh3.googleusercontent.com/-G7nE8r42A4M/Ufm4r1GCLRI/AAAAAAAAAi0/uVGlTo2KRL0/s800/MO2_7.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid1')" class="toggleheader">
+    <table class="gametitle_table"><tr><td align="left"><u>秋之回忆1</u></td><td align="right">发布日期：2011-08-05</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid1" class="togglebody">
+    移植者：chen_xin_ming<br>
+    原发布地址：http://www.yayabo.cn/thread-19077-1.html<br>
+    <h3>游戏介绍</h3>
+    季节在秋天...<br>
+    主人公“三上智也”，是一位在私立澄空学院上学的17岁高二学生<br>
+    日常生活中，智也通过和好动而又温柔的青梅竹马、友好而开朗的转校生等等各种各样的女孩的来往，来寻找自己真正的感情。<br>
+    和他们相遇，为智也带来了如何的心境？<br>
+    但是，即使是在他心中，也隐藏着让人心痛，悲惨的过去...<br>
+    就在这各种各样的思想的缠绕下，深深渐渐来临........<br>
+    此次移植的秋之回忆1为全语音、全剧情。带完整的Pure Story 和After Story。<br>
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=467641&amp;uk=640660078" target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="http://lh3.googleusercontent.com/-TaK62dR1F98/Ufm4rizDY7I/AAAAAAAAAio/q83y_4-2fTo/s800/MO1_1.jpg"><img src="http://lh6.googleusercontent.com/-CXjGQX8SsLs/Ufm4phWatCI/AAAAAAAAAh0/geow4hoQvJk/s800/MO1_2.jpg"><img src="http://lh3.googleusercontent.com/-zXZ6vMc0fhc/Ufm4p8hyg9I/AAAAAAAAAh8/g7kvj-mhjqE/s800/MO1_3.jpg"><img src="http://lh4.googleusercontent.com/-tr05zaHaUUs/Ufm4qKTOWvI/AAAAAAAAAiE/L99NR3y-rCI/s800/MO1_4.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------ -->
+</div>
+
+
+<div class="box" style="text-align:center;padding:5px;">
+<a href="http://sentsin.com/jquery/layer/" target="_blank">移植文档</a>
+<a href="javascript:;" id="about">关于pymo</a>
+<a href="javascript:;" id="changelog">更新日志</a>
+<a href="http://tieba.baidu.com/f?kw=pymo" target="_blank">贴吧反馈</a>
+<div style="font-size:12px;">Copyright © chen_xin_ming 2011-2013<p>All Rights Reserved</div>
+</div> 
+
+
+<script>
+/*$(function() {
+          $("img").lazyload({
+             skip_invisible : true});
+      });*/
+
+(function(){
+
+$('#changelog').on('click',function(event){
+	event.preventDefault();
+	$.layer({
+		type : 2,
+		title : ['更新日志',true],
+		offset : ['50px',''],
+		shadeClose : true,
+		area : ['400px','500px'],
+		iframe: {src : 'changelog.html'},
+	});
+});
+
+$('#about').on('click',function(){
+	var html = '<h2>关于pymo</h2>';
+
+	var i = $.layer({
+		type: 1,
+		title: ['',false],
+		closeBtn: ['',true],
+		border : [5, 0.5, '#666', true],
+		offset: ['50px',''],
+		move: ['.juanmove', true],
+		area: ['400px','auto'],
+		shadeClose : true,
+		page: {
+			html: html
+		}
+	});
+});
+
+
+$('#suggest').on('click',function(event){
+	event.preventDefault();
+	$.layer({
+		type : 2,
+		fix : false,
+		shade : [0.8 , '#E3E3E3' , true],
+		shadeClose : true,
+		border : [10 , 0.7 , '#272822', true],
+		title : ['',false],
+		offset : ['30px',''],
+		area : ['960px','9500px'],
+		iframe : {src : $(this).attr('href')}
+	});
+});
+
+
+
+//layer_download
+$('#download_pymo').on('click', function(){
+	var html = '<div class="juan"><h2>请选择对应平台下载</h2><br><p>Android版 (适合Android 2.3以上手机和平板)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401161&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_for_Android.apk/download" target="_blank">下载点二</a></p><br><p>Symbian版 (适合S60v3、S60v5和Symbian^3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401163&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/latest/download" target="_blank">下载点二</a></p><br><p>S60v3 MR版 (适合N73、N80等早期S60v3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401164&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_S60_MR.zip/download" target="_blank">下载点二</a></p></div>';
+
+	var i = $.layer({
+		type: 1,
+		title: ['',false],
+		closeBtn: ['',true],
+		border : [5, 0.5, '#666', true],
+		offset: ['50px',''],
+		move: ['.juanmove', true],
+		area: ['400px','auto'],
+		shadeClose : true,
+		page: {
+			html: html
+		}
+	});
+});
+
+//layer_install
+$('#install_pymo').on('click', function(){
+	var html = '<div class="juan"><h2>安装方法</h2><br><p>Android版：</p><p><a href="http://pan.baidu.com/share/link?shareid=401161&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_for_Android.apk/download" target="_blank">下载点二</a></p><br><p>Symbian版 (适合S60v3、S60v5和Symbian^3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401163&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/latest/download" target="_blank">下载点二</a></p><br><p>S60v3 MR版 (适合N73、N80等早期S60v3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401164&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_S60_MR.zip/download" target="_blank">下载点二</a></p></div>';
+
+	var i = $.layer({
+		type: 1,
+		title: ['',false],
+		closeBtn: ['',true],
+		border : [5, 0.5, '#666', true],
+		offset: ['50px',''],
+		move: ['.juanmove', true],
+		area: ['400px','auto'],
+		shadeClose : true,
+		page: {
+			html: html
+		}
+	});
+});
+
+
+})();
+
+max_game_num=50;
+function set_visibility(id) {
+  var e = document.getElementById(id);
+  e.style.display = 'block';
+}
+function unset_visibility(id) {
+  var e = document.getElementById(id);
+  e.style.display = 'none';
+}
+function toggle_visibility(id) {
+  for (var i=1;i<=max_game_num;i++)
+  {
+    if (id=="gameid"+i){
+      var e = document.getElementById(id);
+      if (e.style.display == 'none')
+        e.style.display = 'block';
+      else
+        e.style.display = 'none';
+    }
+    else
+      unset_visibility("gameid"+i);
+  }
+}
+function hide() {
+  for (var i=1;i<=max_game_num;i++)
+  {
+    unset_visibility("gameid"+i);
+  }
+}
+</script>
+</body>
+</html>
