@@ -1,5 +1,33 @@
 ﻿@charset "UTF-8";
 /* part of this template comes from http://www.w3school.com.cn/index.html */
+html{
+    background-color:#E3E3E3;
+    font-size:14px; color:#000; 
+    min-width: 500px; 
+    max-width: 1024px; 
+    overflow:scroll; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-family:'微软雅黑';
+}
+a,a:hover{ text-decoration:none;}
+
+pre{font-family:'微软雅黑'}
+.box{padding:20px; background-color:#fff; margin:10px 20px; border-radius:5px;}
+.box a{padding-right:15px;}
+.layer_text{background-color:#fff; padding:20px;}
+.layer_text p{margin-bottom: 10px; text-indent: 2em; line-height: 23px;}
+.button{display:inline-block; *display:inline; *zoom:1; line-height:30px; padding:0 20px; background-color:#56B4DC; color:#fff; font-size:14px; border-radius:3px; cursor:pointer; font-weight:normal;}
+
+.juan{ padding:10px; text-align:left;}
+.juan p{line-height:23px;}
+.juan p a{font-size:14px;}
+.juanGo, .juanLu{display:inline-block; *display:inline; *zoom:1; margin-right:10px;  line-height:30px; padding:0 15px;}
+.juanGo{border:1px solid #F67600; background-color:#FFA100; color:#fff;}
+.juanGo:hover{background-color:#FFB12F; color:#fff;}
+.juanLu{border:1px solid #B3B3B3; padding:0 20px; background-color:#FDFDFD; color:#595959;}
+.juanLu:hover{border:1px solid #888;}
+
 h3{
 	font-size:16px;
 }
