@@ -67,8 +67,25 @@ h3{
 .gametitle_table tr {
     margin: 0;
 }
-.gametitle_table td {
+.gametitle_table_td1 {
     margin:0;
     padding:0;
     width:50%;
+    text-align:left;
+    vertical-align:middle;
+}
+.gametitle_table_td2 {
+    margin:0;
+    padding:0;
+    width:20%;
+    text-align:right;
+    vertical-align:middle;
+    position: relative;
+}
+.gametitle_table_td3 {
+    margin:0;
+    padding:0;
+    width:50%;
+    text-align:right;
+    vertical-align:middle;
 }

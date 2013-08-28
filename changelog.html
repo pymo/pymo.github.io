@@ -6,8 +6,29 @@
 <meta name="viewport" content="width=500, initial-scale=0.64, user-scalable=yes"/>
 </head>
 <body>
-<div class="box" style="padding:5px;">
+<div class="box" style="text-align:center;padding:5px;">
 <h2>pymo更新日志</h2>
+</div>
+<div class="box" style="padding:5px;">
+<p>
+[2013.09.02]<br>
+- v1.0.0<br>
+- 增加#select_imgs指令，可以载入独立的按钮图片<br>
+- 增加#wait_se指令<br>
+- 可以在 #chara 和 #chara_y 中使用文件名NULL表示擦除立绘<br>
+- android: 新的游戏选择界面，可以选择任意的文件夹位置<br>
+- android: 支持多种键盘大小和位置设置<br>
+- android: 支持按原比例显示游戏<br>
+- android: 支持视频播放，扩展名必须为mp4。推荐使用和s60v5相同的编码格式，分辨率和码率可适当提高。<br>
+- android: 加入资源预取以提升流畅度<br>
+- android: 修复遮罩变换时的坐标错乱问题<br>
+- android: 后台时静音<br>
+- symbian: 修复预取 #chara_scroll 时的问题<br>
+- symbian: 修复当imagesize和屏幕大小不一致时chara坐标错乱问题<br>
+- pc: 修复vo播放时不等待的问题<br>
+- 感谢时空痕设计的新图标，以及娜娜提供的文件选择界面~<br>
+</p>
+<p>
 [2013.03.02]<br>
 - v0.9.0<br>
 - 加入#chara_anime、#config指令<br>
@@ -25,6 +46,7 @@
 - 修正在Android 4.1上找不到游戏的问题<br>
 - android版chara改为和bg同一缩放比例<br>
 - android和PC版可以使用自定义的ttf字体（命名为default.ttf，放在system文件夹下）<br>
+</p>
 <p>
 [2012.09.08]<br>
 - v0.8.0<br>
@@ -36,6 +58,7 @@
 - 增加#text_off指令<br>
 - 修正读档时不清除当前已存在变量的错误<br>
 - #select_var和#select_img时可存档（通过init_highlight参数设置）
+</p>
 <p>
 [2012.08.07]<br>
 - v0.7.0
@@ -47,6 +70,7 @@
 - 修正读档时会覆盖全局变量的问题<br>
 - 修正读取低版本gameconfig时出现的“gameconfig.txt损坏”错误<br>
 - 采用新存档格式，0.6版及以下的pymo不能读取0.7版生成的存档，但0.7版可读取旧版存档。
+</p>
 <p>
 [2012.05.07]<br>
 - v0.6.0<br>
@@ -60,6 +84,7 @@
 - 修正Symbian^3下无切换特效的问题<br>
 - 安装程序自带icon_mask.png和keypad.png<br>
 - 识别所有盘符下Python文件夹里的游戏
+</p>
 <p>
 [2012.02.14]<br>
 - v0.5.0<br>
@@ -68,12 +93,14 @@
 - 后台运行时暂停和静音<br>
 - 游戏菜单中可以按右软键返回<br>
 - 改善了字体搜索功能
+</p>
 <p>
 [2012.01.22]<br>
 - v0.4.0<br>
 - 启用pymo自定义的指令集<br>
 - 加入图片、音效打包功能<br>
 - 加入更换对话框指令
+</p>
 <p>
 [2011.12.24]<br>
 - v0.3.0<br>
@@ -81,6 +108,7 @@
 - 修正Symbian^3设备上虚拟键盘消失问题<br>
 - 加入CG鉴赏和音乐鉴赏功能<br>
 - 修复打开语音文件时的KErrOverflow错误
+</p>
 <p>
 [2011.08.08]<br>
 - v0.2.0<br>
@@ -94,6 +122,7 @@
 - 加入语音文件打包功能<br>
 - 加入CALL、load、select_text指令，加入音乐相关指令用于制作ED<br>
 - 取消竖屏设备的屏幕方向设置
+</p>
 <p>
 [2011.07.23]<br>
 - v0.1.0<br>
@@ -108,6 +137,7 @@
 - 用户可设置字体和字号<br>
 - 支持多个游戏共存<br>
 - 使用资源预取机制，提升流畅度
+</p>
 </div> 
 
 </body>

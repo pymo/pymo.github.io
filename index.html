@@ -15,14 +15,16 @@ background: url(images/index_idg.jpg) no-repeat right;
 -webkit-border-radius: 5px;
 border-radius: 5px;">
 <pre>
-<div style="margin-left:40px; ">
+<div style="margin-left:50px; ">
 <div  align="left" style="text-shadow:white 1px 2px 1px;">
 <h2>pymo，手机上的GalGame引擎</h2>
 软件版本：0.9
 更新时间：2013-03-03
 支持系统：Symbian/Android/Windows
 </div>
-<span class="button" id="download_pymo" style="background-color:orange; margin-top:20px; margin-left:40px;">立即下载</span><span class="button" id="install_pymo" style="margin-left:20px;">安装方法</span>
+<span class="button" id="download_pymo" style="background-color:orange; margin-top:20px; margin-left:0px;">立即下载</span><span class="button" style="background-color:#49AAEE;margin-left:20px;"><a href="install.html" style="color:#fff;padding:0">安装方法</a></span><span class="button" style="background-color:#49AAEE;margin-left:20px;"><a href="http://tieba.baidu.com/f?kw=pymo" target="_blank" style="color:#fff;padding:0">贴吧讨论</a></span>
+    <a href=""></a>
+
 </div>
 </pre>
 </div>
@@ -30,41 +32,640 @@ border-radius: 5px;">
 <h2>游戏列表</h2>
 <!-- ------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------ -->
-  <span onclick="toggle_visibility('gameid23')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>3days(缺简介和截图)</u></td><td align="right">发布日期：2012-09-07</td></tr></table>
+  <span onclick="toggle_visibility('gameid39')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>G弦上的魔王（日文版）</u></td><td class="gametitle_table_td3">发布日期：2013-08-17</td></tr></table>
   </span>
-  <div style="display:none" id="gameid23" class="togglebody">
-    移植者：Smileの寂寞、Asura<br>
-    原发布地址：<a href=http://www.yayabo.cn/thread-24531-1.html>http://www.yayabo.cn/thread-24531-1.html</a><br>
+  <div style="display:none" id="gameid39" class="togglebody">
+    移植者：幻蓝之空<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2537330554>http://tieba.baidu.com/p/2537330554</a><br>
     <h3>游戏介绍</h3>
+【游戏名称】 G弦上的魔王（体验版）<br>
+【游戏语言】 日文<br>
+【 移植 】 幻蓝之空<br>
+【游戏平台】 android<br>
+【 限制 】 R15<br>
+【游戏容量】 解压前1.55GB 解压后 2.08GB （包括pymo 0.9 安卓版）<br>
+G弦上的魔王（ジーせんじょうのまおう、The Devil on G-string），是AKABEiSOFT2（あかべぇそふとつぅ）于2008年5月29日发售的R冒险游戏，自2007年11月29日开始因质量提升及开发迟缓的原因三度延期。在发售前已获得高评价，G网2008年上半年统计中是第三名。美少女 Game Award 2008中该作荣获年度最佳大奖与最佳剧本、最佳图像、最爱玩家支持金赏、最佳主题曲银赏。宣传词为“赌上性命的、纯爱”（命をかけた、纯爱）
+    <h3>关于移植</h3>
+1:：花了将近一个月终于能够发布了。。。这次移植非常【感谢洛州尹】的帮忙！在移植前期一头雾水的时候洛大给了我非常多的建议和帮助，如果没有找他帮忙，可能这次移植会延后十几天甚至根本完成不了。。。<br>
+2：这是本人第一次移植游戏，由于经验不足，故没有移植系统鉴赏（变量控制很蛋疼)，同时因为这是日文版的原因，为了避免玩家乱选导致BE（好吧，其实是不想做。。。），游戏中所有选择支都没有设置变量，此外，游戏中没有椿姬的BE<br>
+3：本次移植保留了PC原版80%以上特效，奈何引擎限制，游戏流畅度不高（部分特效无法完美显示）<br>
+4：同样因为引擎限制和本人技术原因，部分场景（同屏立绘数达到4，5个左右且背景频繁滚动的场景）游戏立绘坐标会出现混乱，但这种场景不多。游戏中大部分应该用#text显示的文本使用了#say代替（好吧，我太懒了）。另外章节跳转省略了返回主菜单功能<br>
+5：为何没有进行塞班版本的移植，我想这也是无可奈何的，因为我个人没有使用塞班机，不能进行游戏测试以及debug工作，所以任何有爱人士可无需经过本人同意将此脚本用于【Pymo 塞班】 版本的移植或研究，但【若是将此脚本用于非pymo引擎的研究，请务必取得本人许可】
+    <h3>关于转载</h3>
+本游戏首发地址为Pymo吧，转载至与galgame相关站点请保留完整信息，与galgame无关站点需经过本人同意方可转载，禁止转载至任何有盈利性质的商业网站，禁止用于任何商业用途
+    <h3>写在最后</h3>
+虽说我已经进行了两次大的debug工作，但不排除仍有部分bug未能解决的问题，发现bug的朋友请及时与我联系 百度ID : 枫叶划过的伤
     <h3>游戏下载</h3>
-    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=26641&amp;uk=4111340175"  target="_blank">下载点1</a><br>
-    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=26642&amp;uk=4111340175"  target="_blank">下载点1</a>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=3265897272&uk=4178771967"  target="_blank">下载点1</a><br>
     <h3>游戏截图</h3>
-    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-u1zKzJXcv80/UfxpO3y5QwI/AAAAAAAAAnM/QO1ABjdgBGE/s800/ab_1.jpg"><img src="images/grey.gif" data-original="http://lh6.googleusercontent.com/-ectBtb8t4yQ/UfxpO5pGm8I/AAAAAAAAAnQ/d_I1gimK3U0/s800/ab_2.jpg"></div>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh4.googleusercontent.com/-U2sR2yRf-Mk/UhvfeGMEsZI/AAAAAAAAAr4/yzAI9yreBTo/s800/G-string_1.png"><img src="images/grey.gif" data-original="http://lh4.googleusercontent.com/-UOIfUlcGgks/UhvfecsP9gI/AAAAAAAAAsM/_UNTJKqyKVQ/s800/G-string_2.png"><img src="images/grey.gif" data-original="http://lh6.googleusercontent.com/-fNhaWnIU8fQ/Uhvfed0dwcI/AAAAAAAAAsA/u29uJnPYFDU/s800/G-string_3.png"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid38')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>花吻在上13</u></td><td class="gametitle_table_td3">发布日期：2013-07-30</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid38" class="togglebody">
+    移植者：天使の脉动<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2465779383>http://tieba.baidu.com/p/2465779383</a><br>
+    <h3>游戏介绍</h3>
+【游戏名】花吻在上13（亲吻那片花瓣 画室里的恋人们）<br>
+【汉化组】MiyaRisa汉化组<br>
+【移植者】天使の脉动（百度ID Oyasumikimi）<br>
+【游戏版本】安卓版、s60v5、s60v3<br>
+原名『その花びらにくちづけを アトリエの恋人たち』，于2013年3月29日发行。<br>
+是花吻系列第一部商业化作品的续作。游戏剧情虽然是单线，但文本容量相比以往要大不少。<br>
+故事情节：<br>
+最佳情侣的活动告一段落了──<br>
+高三生的毕业仪式也顺利结束，璃纱迎来了悠闲的日子。一如既往的与逃课惯犯美夜进行你追我赶，如今已是热恋中的情侣，幸福充满着每个朝夕。今天也在旧教学楼顶层的里屋、只属于两人的秘密画室里，理所当然的一起度过时光……性格认真的璃纱对于将这个房间私有化感到些许歉疚。偶然间从美夜那里听到了关于房间的由来。这间美术室寄托了璃纱的种种思念，隐藏着许多甜蜜蜜的浪漫——
+    <h3>感谢</h3>
+特别感谢tt芽前辈，没有前辈的帮助我不可能完成如此完美的移植作品，真的非常感谢。感谢洛州尹、死亡之纳塔亚、qzzppgg、smile无言意、doomless等诸多前辈们的帮助与指点，让我尽可能的完成移植。感谢pymo吧的每一位吧员的支持，我才有信心即不懈奋斗的动力。在此献上我的第一部移植作品。
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=4045533575&uk=1530287651"  target="_blank">下载点1</a><br>
+    解压码：pymo
+    <h3>游戏截图</h3>
+    <div class="screenshots"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid37')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>萝莉的时间</u></td><td class="gametitle_table_td3">发布日期：2013-06-01</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid37" class="togglebody">
+    移植者：莫、儿<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2363528591>http://tieba.baidu.com/p/2363528591</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】ナイショのじかん<br>
+【 移植者 】莫、儿（百度ID：肛掉度娘）<br>
+【 汉化组 】蘑菇汉化组<br>
+【运行平台】S60v3、S60v5、Symbian^3、Android<br>
+【游戏容量】v3 140MB、v5 171MB、android 178MB<br>
+<br>
+论萝莉的重要性，日本要封LOLI？ 来！吃我大屌！
+    <h3>说明</h3>
+游戏在原有基础上增加了，萝莉点数系统，至于有何用，请看游戏内的说明（笑）<br>
+未经本人允许不得有任何形式的转载，谢谢合作<br>
+如遇到运行不能的BUG，可以联系我QQ：1107691251，小问题什么的我就懒得改了<br>
+祝君 游戏愉快 撸的放心 身寸的舒心……
+    <h3>感谢</h3>
+蘑菇组所有成员无私的付出，还有蛋妹爽快的同意了授权，以及测试者幻灭的认真测试
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=487130&uk=4113095287"  target="_blank">下载点1</a><br>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-btIT1LzeJyE/Uhva3hJx1SI/AAAAAAAAAp0/4DdP5YoH8tQ/s800/loli_1.png"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-7GONYHOaU0k/Uhva31Sem3I/AAAAAAAAAqI/480e_yjCxOw/s800/loli_2.png"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-DfBXAze4VVA/Uhva39xejXI/AAAAAAAAAp8/xsvXIrcP76M/s800/loli_3.png"><img src="images/grey.gif" data-original="http://lh4.googleusercontent.com/-9CFDsR3M2FU/Uhva4gSaIII/AAAAAAAAAqA/rEGWxCSOg5U/s800/loli_4.png"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid36')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>幼驯染成了大总统</u></td><td class="gametitle_table_td3">发布日期：2013-04-05</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid36" class="togglebody">
+    移植者：墨水管<br>
+    原发布地址：<a href=http://kdays.cn/days/read.php?tid=29574>http://kdays.cn/days/read.php?tid=29574</a><br>
+    <h3>游戏介绍</h3>
+西历20XX年，新本（日本）。<br>
+那个清晨，主角像平时一样去叫青梅竹马的少女起床。<br>
+那是个跟往常一样，日常的清晨——本应是。<br>
+“怎么隔壁的屋子变成了X宫了！？”<br>
+”因为我是大总统嘛?“<br>
+从那天开始，主角那平和的日常生活就被弄得七零八落。<br>
+仅仅是一个晚上，新日本“新本”就成为了大总统制，更令人意外的是大总统是青梅竹马的女孩。<br>
+可是，谁都没有对这异常的世界感到疑惑。知道到昨天为止的世界的人，就只有主人公一个。<br>
+混乱的主人公，被突然出现在屋中的少女的谜之怪光线击中，失去了意识。醒来的时候，看见的是从没见过的四面都是机械的房间。<br>
+少女开口说的第一句，是这样的话。<br>
+”妾身是外星人“<br>
+……“哈？”<br>
+——从遥远的宇宙而来，为了建立邦交而来到地球的外星人。<br>
+可是，乘坐的宇宙船因为意外坠落在新本的首相官邸了。<br>
+因为首脑群已经全部死掉了，所以紧急之下只能由肇事少女代替他们工作，少女为了让这状况显得像没发生问题一样，所以把全人类都洗脑了。<br>
+「用你的记忆，来帮我们让世界变回原状吧。」<br>
+为什么记得直到昨天的世界的主人公的记忆，能让世界恢复原状呢。外星人这样说。<br>
+在死掉的首相们复活的时候，作为副总统辅助青梅竹马的大总统的主人公。<br>
+UFO变成了女孩，美少女成为了俄罗斯的总统，被谜之外星人袭击，这样错乱无章的日子正在延续。<br>
+为了让世界恢复原状，今天主人公也要加油。
+    <h3>说明</h3>
+本次移植得到了KDays和Makura Castle的授权和支持，谢谢！<br>
+<br>
+汉化staff：<br>
+企划：小汀<br>
+程序：Zeas，坑娘<br>
+翻译：小汀，奈落の花，YURI MAKES，马桶绿巨人，最后的御姐控<br>
+改图：坑娘，Revotan，Suki，老强，Tilu_Dear，小汀<br>
+视频：坑!?字幕组（坑娘）<br>
+<br>
+移植：gjy_管<br>
+测试：qaxxxx，黑之契约者，洛州尹，Taigacon，tt芽<br>
+感谢众大神的支持！<br>
+<br>
+转载请注明此贴地址并附上全文。<br>
+禁止转载至商业盈利性质的网站（以及三次元刊物等等）。<br>
+禁止转载至有未处理的非法转载历史的网站。<br>
+禁转ons安卓吧与ACGF吧。
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=3887623143&uk=1577138111"  target="_blank">下载点1</a><br>
+    提取码42wd
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-KtUtjNh1qfE/UhvZoatoP-I/AAAAAAAAApY/L32nGzuT3t4/s800/osadai_1.jpg"><img src="images/grey.gif" data-original="http://lh6.googleusercontent.com/-etR5Cm8e-LM/UhvZocglqAI/AAAAAAAAApc/aS9xiwZ6zHU/s800/osadai_2.jpg"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-KFDZ2_sWFyE/UhvZociICTI/AAAAAAAAApk/6Ln6yL-hAg8/s800/osadai_3.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid35')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>纯白交响曲</u></td><td class="gametitle_table_td3">发布日期：2013-03-18</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid35" class="togglebody">
+    移植者：黑之契约者<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2219039435>http://tieba.baidu.com/p/2219039435</a><br>
+    <h3>游戏介绍</h3>
+为人着想而爱操心的主人公·瓜生新吾。他所就读的学校将要和同一个地区的某名门女校合并。从10月起的半合并期间，新吾作为混合学习的选拔生的一员而开始在女校上学，在那里等待着他的是与个性丰富的少女们的邂逅、对男性的拒绝反应。新吾为了使气氛更加和谐而忙碌，在这期间…… 恋爱的颜色是白色。能够被“二人的色彩”所浸染的、纯真无垢的白色。
+    <h3>说明</h3>
+    与之前的ons版一样： 本组暂未授权给除合作组织外任何网站\论坛\贴吧等站点转载本组资源，转载请遵守以下规则：<br>
+1：若文章注明禁止转载，请勿擅自转载内容。<br>
+2：转载时请保留原帖信息不要发布资源下载地址，直接附上本帖地址即可。如果需要转载全文，请和我们联系。<br>
+3：请不要对原文进行任何不正当的改动。<br>
+4：请不要转载至任何 与手机游戏资源相关/与ACG无关 的网站\论坛\贴吧。如：“acgf论坛，acgfuture吧，ons安卓吧 BBS.ggg.cn”<br>
+5：不可以将游戏资源用于商业用途，破解等。 禁止对本游戏进行拆包压缩等.<br>
+<br>
+申请转载请在纯白交响曲吧发帖申请<br>
+解压包密码为 纯白交响曲吧
+    <h3>感谢</h3>
+    移植：黑之契约者<br>
+    技术支援：chen_xin_ming、Taigacon 
+    <h3>游戏下载</h3>
+    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=449053&amp;uk=2199689984"  target="_blank">下载点1</a><br>
+    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=449054&amp;uk=2199689984"  target="_blank">下载点1</a><br>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=449056&amp;uk=2199689984"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-P8zPwc76o60/UhvCskYlDEI/AAAAAAAAApE/Mlvo7ZajAF4/s800/chunbai_1.jpg"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-nwOe0hoq6jQ/UhvCsrzJdGI/AAAAAAAAAo8/dKXYd6mBD5M/s800/chunbai_2.jpg"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-6glocZhP0aY/UhvCsofxNDI/AAAAAAAAApA/F0gKZXzW1vs/s800/chunbai_3.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid34')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>仓野家的双子情事</u></td><td class="gametitle_table_td3">发布日期：2013-03-16</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid34" class="togglebody">
+    移植者：EraldoCoil<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2214038260>http://tieba.baidu.com/p/2214038260</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】仓野くんちのふたご事情 译名：仓野家的双子情事<br>
+【 移植者 】EraldoCoil<br>
+【运行平台】S60v3、S60v5、Symbian^3、Android<br>
+【游戏容量】v3 1GB、v5 1.1GB、android 1.7GB<br>
+<br>
+经营着咖啡厅『APPLE PIE』的仓野家，是个有三对双胞胎，合计共八名成员的大家庭。<br>
+最大的双胞胎，是泉与命。<br>
+稳重的资优生的长女与念书方面虽然不行但却擅长运动的二女。<br>
+接着的第二对双胞胎，是智花与和哉。<br>
+具常识、负责担任吐槽角色的三女与在家人间比父亲更值得让人依靠的长子(主角)。<br>
+最后一对最小的双胞胎，是弥惠与绘麻。<br>
+擅长家事的大和抚子的四女与从小被疼爱有加、就像小猫一样的五女。<br>
+<br>
+虽然双亲经常吵架，但每天还是以『APPLE PIE』为中心过着和睦的生活。<br>
+但是――就在暑假前的某一天。<br>
+双亲的吵架越吵越烈，这次演变成要离婚的地步!<br>
+而五姐妹当中，能够和被母亲给收养的和哉一起走的只有一人。<br>
+「要和弟弟(哥哥)一起住的人是我!!」<br>
+赌上和最喜欢的长子一起共同生活的未来，<br>
+仓野家五姐妹的『主角争夺战』 就此展开――!!
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=404873&amp;uk=640660078"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://i1340.photobucket.com/albums/o729/luozhouyin/DC16843CD01314E9DE61F85D45E1EE34_zpsd0a28179.jpg"><img src="images/grey.gif" data-original="http://i1340.photobucket.com/albums/o729/luozhouyin/Screenshot_2013-03-18-19-54-51_zps7bc90539.png"><img src="images/grey.gif" data-original="http://i1340.photobucket.com/albums/o729/luozhouyin/Screenshot_2013-03-18-19-58-26_zpsb6a94d2c.png"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid33')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>秋之回忆4 从今以后</u></td><td class="gametitle_table_td3">发布日期：2013-03-03</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid33" class="togglebody">
+    移植者：Smileの寂寞<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2191588099>http://tieba.baidu.com/p/2191588099</a><br>
+本次移植为个人移植，版权归 KID 所有。本移植作仅供学习交流之用，禁止用于任何商业用途。
+    <h3>游戏介绍</h3>
+【游戏名称】秋之回忆4 从今以后<br>
+【 移植者 】Smileの寂寞<br>
+【运行平台】S60v3、S60v5、Symbian^3、Android<br>
+【游戏容量】v3 800 MB、v5 1GB、android 1.2GB<br>
+<br>
+继《秋之回忆 Memories Off 2》与《想君～秋之回忆系列》之后，再度推出秋之回忆系列巅峰代表作的最新续集《秋之回忆4：从今以后》 。游戏剧情融合前代的梦幻与《想君～秋之回忆系列》的现实风格，在谎言与真实之间，追求永恒的恋情。本作的时空背景依然是玩家所熟悉的千羽谷和滨吹中学，二代的人气女主角白河萤也以学姊的身分在本作再度登场。柔美的画风，忧郁的音乐，交织出一股淡淡的哀愁，更具震撼力的感人剧情，将要再一次引动玩家眼眶中的泪水！<br>
+时间：不仅是每对恋人都期待的“情人节”，而且是高中毕业前最后一次情人节；地点：不仅是每对恋人都不会忘记的告白的场景，而且提出告白的是女方。滨吹学园三年级的男主角“鹭泽一蹴”，在情人节这一天，怀抱著喜滋滋的心情，来到和女朋友“陵祈”决定交往的海岸边旧教堂，和所有恋爱中的男性一样，他期待著从女朋友手里接过来的巧克力。但是，一切是那么地突然，看似平静无波的海面，忽然掀起了海浪，他的手里，确实收到陵祈给的巧克力，但是他的耳里，却也同时收到陵祈的分手要求，“从一开始我就不喜欢你”。错愕、茫然的一蹴，在不知所以的情况下，呆楞地看著陵祈离去，分手的原因到底是什么？要厚脸皮地挽回？还是就此作罢？矛盾的思绪在心里纠结，一蹴的未来，就交由玩家决定了....
+    <h3>注意</h3>
+主菜单中option选项并非设置功能，而是播放祈等5位角色的日记视频。<br>
+speical选项在通任一结局解锁，non world部分需通果凛和叶夜全线
+    <h3>特别感谢</h3>
+感谢以下人员对MO4所用引擎和脚本的研究，没有他们本次移植就不可能成功。<br>
+AyuanX编写的素材提取工具<a href="http://ayuanx.wordpress.com/2008/07/17/ktg/"  target="_blank">KID Tools GUI</a>；<br>
+WinKiller Studio编写的素材提取工具<a href="http://wks.arai-kibou.ru/ae.php?p=dl"  target="_blank">AE - VN Tools</a>；<br>
+weeaboo编写的<a href="http://www.weeaboo.nl/2011/05/ever-17-vnds-converter-v1-0-0/"  target="_blank">Ever 17 VNDS Converter</a>；<br>
+yc0576编写的Ever17/MO4脚本转换工具<a href="https://code.google.com/p/ever17-script-parser/"  target="_blank">ever17-script-parser</a>；<br>
+chen_xin_ming将脚本转换为pymo格式。<br>
+感谢以下各位帮忙测试<br>
+v5：枫落雪夜<br>
+android：chen_xin_ming<br>
+尤其感谢chen大，给出了许多建议和帮助。
+    <h3>游戏下载</h3>
+    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=305497&amp;uk=4111340175"  target="_blank">下载点1</a><br>
+    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=307619&amp;uk=4111340175"  target="_blank">下载点1</a><br>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=305499&amp;uk=4111340175"  target="_blank">下载点1</a><br>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130226/22/6600957420130226221825012.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130226/22/6600957420130226224321017.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130226/22/6600957420130226224444033.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130302/18/6600957420130302183928068.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130302/18/6600957420130302184035060.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid32')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>フリフレ（FreeFriend）</u></td><td class="gametitle_table_td3">发布日期：2013-02-25</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid32" class="togglebody">
+    移植者：洛州尹<br>
+    原发布地址：<a href=http://tieba.baidu.com/p/2190972030>http://tieba.baidu.com/p/2190972030</a><br>
+    2013.3.17 更新<br>
+-修正了一处脚本跳转错误<br>
+2013.3.10 更新<br>
+-添加 CG 场景 音乐 三种，鉴赏模式 在纯爱线通关后开启！<br>
+-添加 浪漫雅圆 字体<br>
+-修正了立绘、背景层无法淡入的问题<br>
+-修正了两处文本指令转行报错问题
+    <h3>游戏介绍</h3>
+一条短信，一段禁忌的师生恋（雾）。<br>
+<br>
+游戏名称：フリフレ（FreeFriends）<br>
+移植者：洛州尹<br>
+汉化组：缺省<br>
+运行平台：S60v3、S60v5、Symbian^3、android<br>
+游戏容量：android版 105MB  symbian版 v5 80MB v3 75MB<br>
+<br>
+本次移植是在2013年除夕夜开始移植的，经过6个晚上的脚本处理和其后的BUG修正以及鉴赏模式与界面选项的添加，才呈现在pymo玩家面前。<br>
+希望每一个玩家都能从这个小品拔作中获得自己的体会与理解。
+    <h3>声明</h3>
+-禁止修改脚本内容或基于本脚本进行二次编译<br>
+-禁止用于任何商业用途<br>
+-禁止以任何形式转载到ons安卓吧
+    <h3>特别感谢</h3>
+感谢汉化组的辛苦汉化，应要求，汉化组信息不予透露。<br>
+感谢 Eden吧 的 skillinHT 帮忙与汉化组取得联系。<br>
+感谢 qaxxxx chen_xin_ming 不求高分 沦丧的世界 野生的miku 等的指正与帮助。<br>
+特别感谢 Smileの寂寞 帮忙添加变量与制作鉴赏模式 <br>
+寂寞君一丝不苟的态度与井井有条的习惯让我十分钦佩。
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=730771804&uk=857227762"  target="_blank">下载点1</a><br>
+    密码:cjfy 
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://i1340.photobucket.com/albums/o729/luozhouyin/Screenshot_2013-03-18-20-01-37_zpsbf81d44e.png"><img src="images/grey.gif" data-original="http://i1340.photobucket.com/albums/o729/luozhouyin/Screenshot_2013-03-18-20-03-50_zps31f1b914.png"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid31')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>悠久之翼后篇</u></td><td class="gametitle_table_td3">发布日期：2013-02-07</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid31" class="togglebody">
+    移植者：镜面倾斜<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25633-1.html>http://www.yayabo.cn/thread-25633-1.html</a><br>
+    如有重大BUG，请发送邮件至xiaohenbbc@126.com，有效期一个月。<br>
+    因没有足够的时间测试，可能会有一些小的错误，请无视之。
+    <h3>游戏介绍</h3>
+【游戏名称】悠久之翼-后篇<br>
+【外文名称】ef -the latter tale<br>
+【游戏类型】视觉小说类<br>
+【发行时间】2008年<br>
+【制作发行】minori<br>
+【地    区】日本<br>
+【语    言】日文<br>
+【汉化授权】音羽教会<br>
+【字    幕】中文<br>
+【运行平台】S60v3、S60V5、Symbian^3、Android<br>
+【游戏移植】镜面倾斜<br>
+【游戏大小】 S60v3 1.04G、S60v5、Symbian^3  1.2G、Android 1.34G<br>
+ 本作品是日本minori公司的第五部作品，因招揽了《水夏～SUIKA～》、《初音岛》制作而闻名的御影，  和负责该作品人物设定、原画的七尾奈留，在2005年初发表制作消息。<br>
+ 本作品并非采用十八禁游戏常见的冒险游戏类型，而采用了称之为视觉小说的类型。在这种类型当中玩家≠主角，而是以第三人称视点参加戏剧一样。同时御影对成人游戏的故事进行时的互相排他性（跟有些女主角的关系发展进行的话与其他的女主角剧情几乎不会受到影响）以自己的方式解读，对于每个登场人物们，各章节皆以不同的视点与笔触来描写。<br>
+ 同时游戏中的插图，也不是用其他冒险游戏常见的站立图像为底，大量使用了事件插图，并取消了女主角的分歧路线，让玩家没有攻略游戏的心态，而着重于鉴赏故事。<br>
+ 由于上述的讲究使得制作与研发时间拉长，是否能够发行，各式各样的揣测也一一浮现。《ef -the     first tale》的发售日为2006年底。过了两年之后，《ef -the latter tale》也于2008年推出。<br>
+ 《a fairy tale of the two》是“两个人的童话”之义。而“ef”一词并无官方详写，但“ef”的相关音乐里有五首代表作都是以“ef”为字首：游戏主题曲“eternal feather”、“emotional flutter”   ，动画主题曲“euphoric field”、“ebullient future”，以及ef全体作品都有的“ever forever”，以出名度和顺序来排列的话，“eternal feather”（悠久之翼）最具代表性。故此硬要给“ef”一个中译的话，可称为《悠久之翼 - 两个人的童话》。
+    <h3>声明</h3>
+原作版权归原制作商所有，汉化文本版权归音羽教会所有，本移植作品仅供学习之用，禁止用于商业用途与不正当用途，使用和传播过程中出现的任何问题及游戏内容所造成的任何问题，本人不承担任何责任。
+    <h3>特别感谢</h3>
+荼荼丸、谭小培<br>
+Smileの寂寞君帮忙测试V3及定位对话框、名字框。<br>
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=3558838144&uk=1412708824#dir/path=%2Fpymo%2F%E6%82%A0%E4%B9%85%E4%B9%8B%E7%BF%BC%E5%90%8E%E7%AF%87%EF%BC%88ef-b%EF%BC%89"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://img13.poco.cn/mypoco/myphoto/20130207/19/173445593201302071933266764355626090_001.jpg"><img src="images/grey.gif" data-original="http://img13.poco.cn/mypoco/myphoto/20130207/19/173445593201302071933266764355626090_000.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid30')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>悠久之翼前篇</u></td><td class="gametitle_table_td3">发布日期：2013-02-07</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid30" class="togglebody">
+    移植者：镜面倾斜<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25632-1.html>http://www.yayabo.cn/thread-25632-1.html</a><br>
+    如有重大BUG，请发送邮件至xiaohenbbc@126.com，有效期一个月。<br>
+    因没有足够的时间测试，可能会有一些小的错误，请无视之。
+    <h3>游戏介绍</h3>
+【游戏名称】悠久之翼-前篇<br>
+【外文名称】ef - the first tale<br>
+【游戏类型】视觉小说类<br>
+【发行时间】2006年<br>
+【制作发行】minori<br>
+【地    区】日本<br>
+【语    言】日文<br>
+【汉化授权】音羽教会<br>
+【字    幕】中文<br>
+【运行平台】S60v3、S60V5、Symbian^3、Android<br>
+【游戏移植】镜面倾斜<br>
+【游戏大小】 S60v3 308M、 S60v5、Symbian^3  470M、 Android 581M
+ 本作品是日本minori公司的第五部作品，因招揽了《水夏～SUIKA～》、《初音岛》制作而闻名的影，和负责该作品人物设定、原画的七尾奈留，在2005年初发表制作消息。<br>
+ 本作品并非采用十八禁游戏常见的冒险游戏类型，而采用了称之为视觉小说的类型。在这种类型当中玩家≠主角，而是以第三人称视点参加戏剧一样。同时御影对成人游戏的故事进行时的互相排他性（跟有些女主角的关系发展进行的话与其他的女主角剧情几乎不会受到影响）以自己的方式解读，对于每个登场人物们，各章节皆以不同的视点与笔触来描写。<br>
+ 同时游戏中的插图，也不是用其他冒险游戏常见的站立图像为底，大量使用了事件插图，并取消了女主   角的分歧路线，让玩家没有攻略游戏的心态，而着重于鉴赏故事。<br>
+ 由于上述的讲究使得制作与研发时间拉长，是否能够发行，各式各样的揣测也一一浮现。《ef -the     first tale》的发售日为2006年底。过了两年之后，《ef -the latter tale》也于2008年推出。<br>
+ 《a fairy tale of the two》是“两个人的童话”之义。而“ef”一词并无官方详写，但“ef”的相关  音乐里有五首代表作都是以“ef”为字首：游戏主题曲“eternal feather”、“emotional flutter”，动画主题曲“euphoric field”、“ebullient future”，以及ef全体作品都有的“ever forever”，以出名度和顺序来排列的话，“eternal feather”（悠久之翼）最具代表性。故此硬要给“ef”一个中译的话，可称为《悠久之翼 - 两个人的童话》。
+    <h3>声明</h3>
+原作版权归原制作商所有，汉化文本版权归音羽教会所有，本移植作品仅供学习之用，禁止用于商业用途与不正当用途，使用和传播过程中出现的任何问题及游戏内容所造成的任何问题，本人不承担任何责任。
+    <h3>特别感谢</h3>
+221制作的ONS脚本。<br>
+Smileの寂寞君帮忙测试V3及定位对话框、名字框。
+    <h3>游戏下载</h3>
+    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=266997&amp;uk=1847578454"  target="_blank">下载点1</a><br>
+    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=266996&amp;uk=1847578454"  target="_blank">下载点1</a><br>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=266989&amp;uk=1847578454"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130207/19/173445593201302071916441210852766468_001.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130207/19/173445593201302071916441210852766468_000.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid29')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>远去之日的花</u></td><td class="gametitle_table_td3">发布日期：2013-01-01</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid29" class="togglebody">
+    移植者：枫落雪夜<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25456-1.html>http://www.yayabo.cn/thread-25456-1.html</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】远去之日的花<br>
+【日文名称】去りし日の花<br>
+【游戏类型】AVG文字冒险类<br>
+【发行时间】2011年8月9日<br>
+【制作发行】star chaisers<br>
+【地区】日本<br>
+【语言】中文<br>
+【运行平台】S60v3、S60v5、Symbian^3、 Android<br>
+【游戏移植】枫落雪夜<br>
+【游戏大小】S60v3 22.8M、S60v5、Symbian^3 26M、Android 26.7M<br>
+【游戏时间】微型短篇，大概也就15分钟就能完成。 <br>
+尝试过人生失败的，普通的毕业准备就业，想要忘记的回忆还残留着，在那片阳光灿烂的地方……<br>
+于是顺应了自己的冲动向那炫目的回忆以及温柔的记忆残留的那个地方行进———
+    <h3>声明</h3>
+原作版权归原制作商所有，汉化文本版权归我们所有，本移植作仅供学习之用，禁止用于任何商业用途与不正当用途，否则在使用和传播过程中出现的任何问题和造成的任何损失，本人既不承担任何责任，利用本游戏内容所导致的任何法律争议和后果与本人无关。
+    <h3>特别感谢</h3>
+这一次很感谢静止叔群里的基友，合作体。<br>
+汉化成员（量变引起质变） ： <br>
+　　　　　翻译：　　　　　风之将醒<br>
+　　　　　程序/校润：　　 静止系<br>
+　　　　　美工：　　　　　啊酱<br>
+感谢 镜面倾斜君 帮忙制作鉴赏模式，感谢 Smileの寂寞君 帮忙修改菜单
+    <h3>游戏下载</h3>
+    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=180142&amp;uk=2483611210"  target="_blank">下载点1</a><br>
+    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=183914&amp;uk=2483611210"  target="_blank">下载点1</a><br>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=180145&amp;uk=2483611210"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://img2081.poco.cn/mypoco/myphoto/20130101/18/6492977520130101182640076.jpg"><img src="images/grey.gif" data-original="http://img2081.poco.cn/mypoco/myphoto/20130101/18/6492977520130101182653026.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid28')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>车轮之国、向日葵的少女</u></td><td class="gametitle_table_td3">发布日期：2012-12-31</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid28" class="togglebody">
+    移植者：沦丧的世界<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25445-1.html>http://www.yayabo.cn/thread-25445-1.html</a><br>
+    车轮之国是在我心中排名NO.2的作品，仅次于沙耶之歌，是神作无误。车轮之国总共有两部作品，分别是向日葵的少女和悠久的少年少女，向日葵是正篇，悠久的少年少女是FD(Fan Disk)，本帖移植的是向日葵的少女。虽然说悠久是FD，但我认为悠久里面剧情的重要性甚至超过了正篇，因此，要玩车轮之国的同学一定要两部都通关。玩悠久之前一定要先通向日葵的少女，因为悠久里面涉及到了向日葵里面的剧情，不先玩向日葵的话会被悠久剧透的。而且先通了向日葵才能对悠久的剧情有更深刻的感受。嘛，准备好进入这个车轮之国吧！
+    <h3>游戏介绍</h3>
+【游戏名称】车轮之国、向日葵的少女pymo版<br>
+【 移植者 】沦丧的世界<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+注：由于目前安卓pymo还不太完美，还存在一些bug（至少在我的平板上的确有个影响很大的bug），故暂时不发布安卓版。<br>
+【游戏容量】V3：660MB；V5、Symbian^3:830MB <br>
+    该作是·有限会社あかべぇそふとつぅ（AKABEiSOFT2）成立后的第三作，除去用第一作魂响边角余料制作的第二作，魂响～陵辱side～ ，本作可以看作是あかべぇそふとつぅ真正意义上的第二作。 游戏刚刚发售时候可谓时运不济，被两个大厂的作品，2005年11月25日的智代AFTER 和12月9日 的ToHeart2XRATED 夹在中间，以至于社长在BLOG哀叹完全卖不出去。在第一作魂响被称作有史以来最大地雷之一的情况下，第二作又前景惨淡，あかべぇそふとつぅ似乎注定会成为每年中统计数字中做分母的那一堆，在默默无闻之中泯然于众人矣。 但是是金子总会发光，本作在网络上讨论热度逐渐的上升，越来越多的人开始关注起这个从同人组织转成商业公司不到一年的新生力量。<br>
+     <br>
+    本作的主人公，森田贤一， 作为一个以特别高等人为目标的候补生，为了接受第7阶段，也是最后一个阶段的考试，回到了七年前走出的这个的乡下小镇。小镇四周环山，能进出的路就只有一条，而这条路则被一大片的向日葵田夹在中间。到了小镇后他获得了指示，最后一个阶段的课题，是将小镇上的三个负有义务的少女更正过来，那么，究竟是怎样的真实在等待着他呢……？ 
+    <h3>汉化信息</h3>
+破解：七夜囧神（galstars magami）<br>
+翻译（３人）：中出(主)　ヒナタ　末日颂诗使<br>
+校对/修图/OP翻译：saya<br>
+坑主/导出/导入/杂用：bdangel<br>
+字幕/特效：Oilon<br>
+特别感谢：回忆之风论坛 J叔 3爷 小雨 Fantastical<br>
+<br>
+◎车轮之国 向日葵的少女汉化委员会<br>
+◎2008.04.09-2009.05.03
+    <h3>鸣谢</h3>
+感谢雪夜君帮忙测试V5版并提出修改意见。感谢汉化组慷慨给予授权。
+    <h3>注意</h3>
+欢迎转载，但请以链接形式注明出处。<br>
+如有bug，汇报请到本帖<br>
+特别注意：游戏中的立绘没有打包，有打包工具的童鞋最好不要擅自打包，否则鉴赏模式有可能会变得很卡。<br>
+有些骚年出现了进入游戏没有背景音乐的问题，根据测试，退出游戏后重进既可。
+    <h3>游戏下载</h3>
+    塞班版：<a href="http://pan.baidu.com/share/link?shareid=201230&amp;uk=2734717096"  target="_blank">下载点1</a><br>
+    <h3>游戏截图</h3>
+    <div class="screenshots"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid27')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>Rewrite（序章至第七章）</u></td><td class="gametitle_table_td3">发布日期：2012-10-22</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid27" class="togglebody">
+    移植者：天宇仁杰<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25057-1.html>http://www.yayabo.cn/thread-25057-1.html</a><br>
+    近期真的是很忙，没什么时间再往下做，挤出点时间来做又碰上了蓝屏，无比郁闷，又没什么心情再往下做，所以就把做好的整理了一下发出来，测试过了应该没什么问题了，如有错误请尽早提出来，这几天找时间解决掉，最后如果有那位有心接手《rewrite》的移植的话就联系我的QQ就行。
+    <h3>游戏介绍</h3>
+【游戏名称】Rewrite<br>
+【 移植者 】天宇仁杰<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+<br>
+　　绿色都市：风祭。　<br>
+　　居住于这座以“文明与绿色共存”为理念兴建的都市里的天王寺瑚太朗，与神户小鸟、吉野晴彦等伙伴过着平凡的每一天。<br>
+　　在那么和平的风祭市里，每年都有一段时间会特别的热闹，那就是举城欢庆的收获祭。<br>
+　　为了这个类似于文化祭的大型活动，瑚太朗开始干起收集新闻素材的打工。<br>
+　　因为在风祭这个地方，盛行各种未知生物以及超自然现象之类的流言。<br>
+　　同一时间，瑚太朗的身边也开始出现种种无法解释的奇怪事件。<br>
+　　瑚太朗开始着手调查这些事件，并向超自然研究会会长千里朱音寻求帮助，还把自己所认识的同学们也一并卷了进来。<br>
+　　这其实是瑚太朗的小小冒险心在作怪。<br>
+　　“要是能跟伙伴们一起打打闹闹地生活下去，那该多好啊。”<br>
+　　瑚太朗这时还没有意识到，自己的行动已经和探寻那谁也不知道的“真实”联系在了一起。<br>
+　　——那个女孩的命运，能够被改写吗。
+    <h3>游戏下载</h3>
+    塞班版：<a href="http://pan.baidu.com/share/link?shareid=91324&amp;uk=1108908434"  target="_blank">下载点1</a><br>
+    <h3>游戏截图</h3>
+    <div class="screenshots"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid26')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>女装山脉</u></td><td class="gametitle_table_td3">发布日期：2012-10-21</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid26" class="togglebody">
+    移植者：Smileの寂寞<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-25048-1.html>http://www.yayabo.cn/thread-25048-1.html</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】女装山脉<br>
+【 移植者 】Smileの寂寞<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+【游戏容量】300MB<br>
+<br>
+这是一个不可思议的世界，主人公在山间迷路，进入了一个村庄里。<br>
+这里有着男人和伪娘恋爱的奇妙风俗。<br>
+女主角们(貌似不应该这样称呼= =)作为女孩子被养大，却没有被教授身为男孩子的自觉。<br>
+迷路误入那个村子的主人公，让女主角们第一次看到外面的男人。<br>
+女主角们，对首次看到男人有很高的兴趣，对他进行各种积极的调查。<br>
+村民们看到主人公通过隧道来到这里，也都相信主人公是传说中的神的使者，给以他非常热情的欢迎……<br>
+鉴赏等模式将在打通一线后开启
+    <h3>特别感谢</h3>
+组长：黑喵爱妮丝<br>
+程序：大师♂罗庄、逍遥冷月<br>
+改图：了望的猪、C君、妹控葬<br>
+润色：黑猫爱妮丝、超级神兽<br>
+翻译：fafa、hins、木下咲白、魔法使君、Tracy宁<br>
+校对：木下咲白、魔法使君、 hins<br>
+BUG修正：黑喵艾妮丝<br>
+文本整理：黑喵艾妮丝、逍遥冷月、路人ABC、☆米修、夏亚阿兹纳布尔、魔法使君、hins、中二和子、seed酱<br>
+0.5补丁测试：黑喵艾妮丝、green、KとA_帕恋<br>
+0.5+版补丁测试：黑喵艾妮丝<br>
+1.0版补丁测试：黑喵艾妮丝、green、水萧萧、若叶、白银后宫团（无节操の某白银（B站某实况UP主）、永恒、⑨、LV0）<br>
+鸣谢：CK论坛、萌空学园论坛、众位汉化界大神、百度女装山脉吧、PEDIY技术组、百度GALGAME吧以及所有将灵魂卖给路西法的同学们<br>
+ONS版移植：大刘<br>
+<br>
+感谢以下各位帮忙测试：<br>
+bakshi 煮熟的鸭子 chen大<br>
+    <h3>游戏下载</h3>
+    塞班版：<a href="http://pan.baidu.com/share/link?shareid=95611&amp;uk=4111340175"  target="_blank">下载点1</a><br>
+    安卓版：<a href="http://pan.baidu.com/share/link?shareid=324661&amp;uk=4111340175"  target="_blank">下载点1</a><br>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/22/6600957420130114223929032.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/22/6600957420130114224400094.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/22/6600957420130114225527020.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/23/6600957420130114230231030.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/23/6600957420130114230513037.jpg"><img src="images/grey.gif" data-original="http://img14.poco.cn/mypoco/myphoto/20130114/23/66009574201301142310041190647452200_000.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid25')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>学校发生过的恐怖故事</u></td><td class="gametitle_table_td3">发布日期：2012-09-23</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid25" class="togglebody">
+    移植者：Smileの寂寞<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-24623-1.html>http://www.yayabo.cn/thread-24623-1.html</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】学校发生过的恐怖故事VNV<br>
+【 移植者 】Smileの寂寞<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+【游戏容量】v3 230MB、v5 250MB <br>
+<br>
+私立鸣神学园，为了纪念即将被废弃的旧校区、校新闻部决定开展一个新企划“校园里的恐怖故事大揭秘”。新闻部日野贞夫为此请来校园里的7位学生来讲述各自的恐怖体验，并要求身为部员的“我”在听完故事之后完成一篇出色的新闻稿。<br>
+企划当天，当“我”紧张的来到新闻部准备做采访时发现、到场的说故事人只有6位，第7位一直迟迟不出现，无奈之下“我”决定在只有6人的情况下开始了这次的企划，第7位到底何时会出现？又有哪些恐怖古怪的故事等着“我”呢？<br>
+音乐室等选项在通关后开启<br>
+    <h3>特别感谢</h3>
+游戏汉化：K与他的伙伴们<br>
+<br>
+翻译兼总负责人： 徘徊的k1<br>
+技术支持：雷瑟斯 Solar Faith Wilhelm <br>
+修图：剑侠林月如 蜜菜 <br>
+游戏测试：剑侠林月如　SAYO　Wilhelm<br>
+<br>
+贴吧地址：<a href=http://tieba.baidu.com/f?kw=%D1%A7%B2%C0>http://tieba.baidu.com/f?kw=%D1%A7%B2%C0</a>
+<br>
+感谢黑之契约者申请授权<br>
+    <h3>注意</h3>
+游戏包含血腥、猎奇描写，对此不适者，谨慎下载<br>
+（没想到又移植了一个猎奇的= =）<br>
+    <h3>游戏下载</h3>
+    <a href="http://pan.baidu.com/share/link?shareid=505324&uk=1781843666"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-O536LcrEvbM/UhrELJsc-oI/AAAAAAAAAoU/GKI6sGchjFE/s800/xuebu_1.jpg"><img src="images/grey.gif" data-original="http://lh4.googleusercontent.com/-ZFFxLBu8H7Y/UhrELEQZ5vI/AAAAAAAAAog/IKUtazluers/s800/xuebu_2.jpg"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-eD2jW7oCi6k/UhrELLZUGXI/AAAAAAAAAoc/vDxdX1K6snc/s800/xuebu_3.jpg"></div>
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+  <span onclick="toggle_visibility('gameid24')" class="toggleheader">
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>Ever17</u></td><td class="gametitle_table_td3">发布日期：2012-09-08</td></tr></table>
+  </span>
+  <div style="display:none" id="gameid24" class="togglebody">
+    移植者：墨水管<br>
+    原发布地址：<a href=http://www.yayabo.cn/thread-24533-1.html>http://www.yayabo.cn/thread-24533-1.html</a><br>
+    <h3>游戏介绍</h3>
+【游戏名称】Ever17<br>
+【 移植者 】墨水管<br>
+【游戏容量】v3版390M，v5版550M<br>
+在一次意外事故中，7名背景各异的青年男女突然被困在水下51米深的主题公园LeMU，LeMU的墙壁承受着水压的无情挤迫，食物、水、以及生存空间都在慢慢减少，而距灯光明亮的室内仅仅一墙之隔便是无限深邃的黑暗……在封闭的空间和有限的时间中，他们坚持寻找着出路，大家相互帮助，相互鼓励，在克服不断出现的各种危机时结下了深厚的情谊。然而，在感情不断加深的同时，死的倒计时也在不断逼近。事件的全貌在在众多可能性的分支中被一点点揭开，所有的事实都在朝着同一个方向汇集。在难以想象的绝境中，等待他们的到底是个怎样的结局？在迷离的双眼中，最后映出的到底又是什么……<br>
+在完成四条主线后，八神可可的终极剧情才能被触发。该游戏的最大特点就是悬念，记住游戏过程中的每一处细节，每一个选择因为它都有可以使你进入不同的支线剧情，甚至重关结局的变化。玩家在上手时会被弄得一团雾水，但随着剧情的不断深入，你的疑惑会随之消除，但新的困惑又涌上心头，为寻求真理，揭开谜底，你只有将游戏进行到底，而突破所在竟然要等到八神的剧情被触发才能引出，就因为有众多疑点和最后出人意料的结局才使游戏极具可玩性。<br>
+<br>
+感谢众多大大的支持，pymo版的Ever17才能这么快出来。<br>
+包括对提供原ons脚本的toktc，qaxxxx，zcdyz<br>
+提供视频的百川东到海<br>
+进行耐心测试的hyy17tgw,syfneil,枫落雪夜,恋泪の修罗<br>
+最后要感谢chen_xin_ming的支持，给了我持续的帮助，以及帮我改进了很多细节。<br>
+<br>
+如需要使用此脚本，请联系gjy_1992@qq.com<br>
+    <h3>游戏下载</h3>
+    S60v3版：<a href="http://pan.baidu.com/share/link?shareid=402593&amp;uk=1577138111"  target="_blank">下载点1</a><br>
+    S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=402592&amp;uk=1577138111"  target="_blank">下载点1</a>
+    <h3>游戏截图</h3>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh6.googleusercontent.com/-MkSwubElOes/UEtdJAdqmgI/AAAAAAAAAcw/kgXahuLOTEw/s800/Ever17_1.jpg"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-96cfJr7QnR0/UEtdJENFKrI/AAAAAAAAAc0/9WeWmDci_1Q/s800/Ever17_2.jpg"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-ED1-KLPopG0/UEtdJMqLRdI/AAAAAAAAAc4/Th4Ndjf-cw8/s800/Ever17_3.jpg"></div>
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid23')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>3days(缺简介和截图)</u></td><td align="right">发布日期：2012-09-07</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>3days</u></td><td class="gametitle_table_td3">发布日期：2012-09-07</td></tr></table>
   </span>
   <div style="display:none" id="gameid23" class="togglebody">
     移植者：Smileの寂寞、Asura<br>
     原发布地址：<a href=http://www.yayabo.cn/thread-24531-1.html>http://www.yayabo.cn/thread-24531-1.html</a><br>
     <h3>游戏介绍</h3>
+【游戏名称】3days～満ちてゆく刻の彼方で～<br>
+【游戏引擎】pymo 0.8<br>
+【 移植者 】Smileの寂寞、Asura<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+【游戏容量】400 MB<br>
+<br>
+就在此时他们两人在通往綾篠学園的路上，发现了学校里出名的美少女、「柊　美柚」的尸体。<br>
+<br>
+这其中最离奇的是说她的遗体被惨遭分尸、是因为有猟奇殺人犯夜里在綾篠市出没、已经分不清到底是真是假了。<br>
+<br>
+就像要为如此被不安和焦躁所驱赶的两人更加火上浇油一般的、他们的同学跳楼自杀了。<br>
+在彻底陷入死亡的深沉前亮的眼睛里最後看到的是、被活生生切割解体的样子<br>
+<br>
+在这种疯狂的憎悪和絶望中、意識消失了……<br>
+<br>
+游戏为轮回制，会在16-18日里循环，当开启真实之门，谜题便将揭开<br>
+游戏共有4结局，柊 结局、环 结局、梨花 结局、后宫 结局，首次通关后，将会出现Special选项，可查看cg，bgm以及场景回想<br>
+<br>
+    <h3>特别感谢</h3>
+感谢下列汉化组成员：<br>
+监督：天野大美<br>
+主翻：Marill<br>
+翻译：哀怨，あさひ，AN，蛋叔，夕微<br>
+润色：流行り言语，LX，AN，walklty，文天翔，杯具の精精 ，夕凪<br>
+修正：AN，HK，文天翔，无尽の海蓝，某月<br>
+美工：ZJ，猫<br>
+测试：HK，KING，无尽の海蓝，文天翔，ninicolas，ホシノ，洛克人ZERO<br>
+技术支持：痴汉工贼，Lighting<br>
+<br>
+感谢以下各位帮忙测试<br>
+v3: iyours wurenderen 煮熟的鸭子 仙贝啊 chen大<br>
+v5: 枫落雪夜 凌楠 982867232 宁缺物滥丶<br>
+感谢skydark大关于脚本的讨论<br>
+    <h3>注意</h3>
+游戏中有直接表现肢体内脏器官的场景，对此厌恶者，谨慎下载<br>
+关于原游戏中Destiny Click（即时选项），由于pymo引擎所限无法实现，所以改用选项代替<br>
+<br>
+分工：Asura后期脚本修改、Smileの寂寞其余<br>
+<br>
     <h3>游戏下载</h3>
     S60v3版：<a href="http://pan.baidu.com/share/link?shareid=26641&amp;uk=4111340175"  target="_blank">下载点1</a><br>
     S60v5、塞班3版：<a href="http://pan.baidu.com/share/link?shareid=26642&amp;uk=4111340175"  target="_blank">下载点1</a>
     <h3>游戏截图</h3>
-    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-u1zKzJXcv80/UfxpO3y5QwI/AAAAAAAAAnM/QO1ABjdgBGE/s800/ab_1.jpg"><img src="images/grey.gif" data-original="http://lh6.googleusercontent.com/-ectBtb8t4yQ/UfxpO5pGm8I/AAAAAAAAAnQ/d_I1gimK3U0/s800/ab_2.jpg"></div>
+    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-79bjnitbQws/UhrAQKIwVAI/AAAAAAAAAns/FEtpTumXjQU/s800/3days_1.jpg"><img src="images/grey.gif" data-original="http://lh4.googleusercontent.com/-rUBrVE3mFZM/UhrAQFZViEI/AAAAAAAAAnw/YNpuRT_dk_A/s800/3days_2.jpg"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/-EYzYHQTVRME/UhrAQwNp-mI/AAAAAAAAAn4/TH_dHPvu-lg/s800/3days_3.jpg"></div>
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid22')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>Angel Beats!(同人)(缺简介)</u></td><td align="right">发布日期：2012-08-31</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>Angel Beats!(同人)</u></td><td class="gametitle_table_td3">发布日期：2012-08-31</td></tr></table>
   </span>
   <div style="display:none" id="gameid22" class="togglebody">
     移植者：枫落雪夜<br>
     原发布地址：<a href=http://www.yayabo.cn/thread-24478-1.html>http://www.yayabo.cn/thread-24478-1.html</a><br>
+    ps:AB的体验版（其实应该是是同人），ONS有个日文版的，这个是我找朋友汉化了的，同时也感谢帮我汉化的灵魂，游戏容量很小，献给各位键子们，希望喜欢。<br>
+    附：如需使用本汉化文本，请联系 枫落雪夜 QQ：704496291 邮箱：704496291@qq.com或qzzppgg@163.com<br>
+    申明：除非是需要本汉化文本进行移植否则加扣或者邮箱者都被无视，授权请自带诚意，你们不是我大爷，我并没有欠你们什么，我找人无私汉化自己无私移植有些人还在来找我唧唧歪歪找完整版，我不想多吐槽什么，我只能告诉你我也没有完整版，有本事你就找个完整版的给我看看，我立马就开坑移植<br>
+    -------<br>
+    版权声明：<br>
+    游戏版权归原游戏制作者所有，汉化版权归我们所有，本移植作品仅供学习使用，禁止用于任何商业性活动和不正当用途，否则在使用和传播过程中出现的任何问题和造成的任何损失，本人既不承担任何责任，利用本游戏内容所导致的任何法律争议和后果与本人无关。<br>
     <h3>游戏介绍</h3>
+【 移植者 】枫落雪夜<br>
+【 汉化者 】灵魂集散地<br>
+【游戏名称】Angel Beats!(体验版) pyS60版<br>
+【游戏引擎】pymo 0.7<br>
+【运行平台】S60v3、S60v5、Symbian^3<br>
+【游戏容量】54 MB<br>
+9.1更新说明，修改脚本一个错误，V3重新修改了图片大小，更改为rar格式上传，解压请删除后缀.rr3即可解压。<br>
+9.2更新说明，修改了V3版本system里menu和option、option_mask大小，其余没有变动（不出意外的话这个应该是最后一个更新版本，不排除体验版继续出现。。。。。）。<br>
     <h3>游戏下载</h3>
     <a href="http://pan.baidu.com/share/link?shareid=169644&amp;uk=2483611210"  target="_blank">下载点1</a><br>
     <h3>游戏截图</h3>
@@ -72,7 +673,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid21')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>微观尽头（自制游戏）</u></td><td align="right">发布日期：2012-08-19</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>微观尽头（自制游戏）</u></td><td class="gametitle_table_td3">发布日期：2012-08-19</td></tr></table>
   </span>
   <div style="display:none" id="gameid21" class="togglebody">
     移植者：亮一光<br>
@@ -86,7 +687,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid20')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>长门有希的暴走</u></td><td align="right">发布日期：2012-08-11</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>长门有希的暴走</u></td><td class="gametitle_table_td3">发布日期：2012-08-11</td></tr></table>
   </span>
   <div style="display:none" id="gameid20" class="togglebody">
     移植者：天宇仁杰<br>
@@ -100,7 +701,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid19')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>秋之回忆6</u></td><td align="right">发布日期：2012-08-07</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>秋之回忆6</u></td><td class="gametitle_table_td3">发布日期：2012-08-07</td></tr></table>
   </span>
   <div style="display:none" id="gameid19" class="togglebody">
     移植者：chen_xin_ming<br>
@@ -120,19 +721,33 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid18')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>水仙1日文版(缺简介和截图)</u></td><td align="right">发布日期：2012-08-06</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>水仙1日文版</u></td><td class="gametitle_table_td3">发布日期：2012-08-06</td></tr></table>
   </span>
   <div style="display:none" id="gameid18" class="togglebody">
     移植者：Typical_Moon<br>
     原发布地址：<a href=http://www.yayabo.cn/thread-24265-1.html>http://www.yayabo.cn/thread-24265-1.html</a><br>
+    先要感谢掌家这个平台，chen_xin_ming大大提供的pymo引擎及教程，还有在这过程中鼓励我帮助我的众人，最后是给与我力量的所有对Gal有爱的朋友们<br>
+    因为拿不到汉化授权，所以移植的是日文原版，移植仓促（只用了5天）可能有所疏漏，请见谅<br>
+    <h3>游戏简介</h3>
+　　一段灿烂的回忆，一个冬日的故事。 现代，黯淡的气息，即将面对死亡的男女主角。<br>
+　　平静，或许可以作为Narcissu的一个注脚。在游戏的两小时中，2位主角几乎没有太过明显的情绪起伏，只是淡然地面对“死亡”这件事。因此，故事中没有声嘶力竭的哭喊，也没有令人肝肠寸断的临别感言，更没有扭转情势的奇迹。玩家(说“读者”比较贴切)只是静静地看着 濑津美 走完人生的最后一程。<br>
+　　当一个人活着只是在等待死亡时，那会是什么样的感觉?<br>
+　　濑津美8年来反覆地入院、出院，甚至住进象征“等死”的7F。如同她自己所说的，对她而言，时间早已静止，心也早已封闭。从最初开始，她就不抱着任何的希望，就如同希腊神话中的妖精艾歌一样。因为当期望无法实现时，那种绝望会更加痛苦，与其这样，倒不如刚开始便放弃了。<br>
+　　于是，濑津美总是将“没什么”(别に)挂在嘴边，不在乎周围的一切，只是平静地活着。可以说濑津美从八年前便放弃了自己的生命。<br>
+　　整个故事的中心在主人公与濑津美长达900km的旅程。这也可以视为一个转机，让选择逃避的濑津美重新面对自己的人生。最初两人只是因为不想留在医院与家里因此决定离开，然而却因此找到了生存的目标---淡路岛。<br>
+　　到了淡路岛看到成片的水仙时，濑津美的目标达成了，而在这时，主人公终于听见了濑津美真正的心声。而最后，当目标已经达成，生命也渐渐走向尽头，因此，濑津美还是走向了自杀。只是与过去的她有所不同的是，她能带着幸福的记忆与笑容离开。整个故事就这样平静地结束。<br>
+　　结束了960km的旅程<br>
+　　也许，主人公来说是结束了15天的旅程<br>
+　　但是对于濑津美来说，是结束了22年的旅程<br>
+　　Narcissu与其说是游戏，倒不如说短篇电子小说。与商业作品不同的是，故事单纯却深刻。没有华丽的CG图，没有庞大的世界观设定，没有背负宿命的主角，更没有意有所指的说教。只是平静地描述一个平凡女子最后的人生旅程。这样的故事并不特别，然而却很真实。<br>
     <h3>游戏下载</h3>
     <a href="http://pan.baidu.com/netdisk/extractpublic?username=syfneil"  target="_blank">下载点1</a><br>
     <h3>游戏截图</h3>
-    <div class="screenshots"><img src="images/grey.gif" data-original="http://lh3.googleusercontent.com/--PQ8yPbAC0w/UBy-cYapyjI/AAAAAAAAAa8/LSQ1aw_JpUM/s800/miku3_1.PNG"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-WogxSuqG0HA/UBy-cYPnMwI/AAAAAAAAAa8/AeVyz4Lw8qg/s800/miku3_3.PNG"><img src="images/grey.gif" data-original="http://lh5.googleusercontent.com/-ORqI3AEBj8o/UCHlX0JoGBI/AAAAAAAAAbU/PPxcfAmReZ8/s800/miku3_2.PNG"></div>
+    <div class="screenshots"></div>
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid17')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>注视着你瞳里的未来的歌谣</u></td><td align="right">发布日期：2012-08-01</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>注视着你瞳里的未来的歌谣</u></td><td class="gametitle_table_td3">发布日期：2012-08-01</td></tr></table>
   </span>
   <div style="display:none" id="gameid17" class="togglebody">
     移植者：小乡<br>
@@ -159,7 +774,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid16')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>铃音之歌初音之声</u></td><td align="right">发布日期：2012-07-22</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>铃音之歌初音之声</u></td><td class="gametitle_table_td3">发布日期：2012-07-22</td></tr></table>
   </span>
   <div style="display:none" id="gameid16" class="togglebody">
     移植者：忆纱宇悠<br>
@@ -183,7 +798,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid15')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>水仙3</u></td><td align="right">发布日期：2012-07-01</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>水仙3</u></td><td class="gametitle_table_td3">发布日期：2012-07-01</td></tr></table>
   </span>
   <div style="display:none" id="gameid15" class="togglebody">
     移植者：Hentai君<br>
@@ -227,7 +842,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid14')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>把所有的歌献给未来的你</u></td><td align="right">发布日期：2012-06-19</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>把所有的歌献给未来的你</u></td><td class="gametitle_table_td3">发布日期：2012-06-19</td></tr></table>
   </span>
   <div style="display:none" id="gameid14" class="togglebody">
     移植者：忆纱宇悠<br>
@@ -244,7 +859,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid13')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>该死的妹子</u></td><td align="right">发布日期：2012-06-17</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>该死的妹子</u></td><td class="gametitle_table_td3">发布日期：2012-06-17</td></tr></table>
   </span>
   <div style="display:none" id="gameid13" class="togglebody">
     移植者：莫、儿<br>
@@ -273,7 +888,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid12')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>音律的物语EPI</u></td><td align="right">发布日期：2012-06-08</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>音律的物语EPI</u></td><td class="gametitle_table_td3">发布日期：2012-06-08</td></tr></table>
   </span>
   <div style="display:none" id="gameid12" class="togglebody">
     移植者：不求高分<br>
@@ -296,7 +911,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid11')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>精爆双姬</u></td><td align="right">发布日期：2012-05-09</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>精爆双姬</u></td><td class="gametitle_table_td3">发布日期：2012-05-09</td></tr></table>
   </span>
   <div style="display:none" id="gameid11" class="togglebody">
     原发布地址：<a href=http://mobi.acgfuture.com/forum.php?mod=viewthread&amp;tid=33516>http://mobi.acgfuture.com/forum.php?mod=viewthread&amp;tid=33516</a><br>
@@ -309,7 +924,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid10')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>天使的星期日</u></td><td align="right">发布日期：2012-05-05</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>天使的星期日</u></td><td class="gametitle_table_td3">发布日期：2012-05-05</td></tr></table>
   </span>
   <div style="display:none" id="gameid10" class="togglebody">
     移植者：黑之契约者<br>
@@ -344,7 +959,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid9')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>120日元全集</u></td><td align="right">发布日期：2012-04-20</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>120日元全集</u></td><td class="gametitle_table_td3">发布日期：2012-04-20</td></tr></table>
   </span>
   <div style="display:none" id="gameid9" class="togglebody">
     移植者：chen_xin_ming<br>
@@ -378,7 +993,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid8')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>月姬</u></td><td align="right">发布日期：2012-04-11</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>月姬</u></td><td class="gametitle_table_td3">发布日期：2012-04-11</td></tr></table>
   </span>
   <div style="display:none" id="gameid8" class="togglebody">
     移植者：Hentai君，119<br>
@@ -396,7 +1011,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid7')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>花吻在上1</u></td><td align="right">发布日期：2012-02-19</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>花吻在上1</u></td><td class="gametitle_table_td3">发布日期：2012-02-19</td></tr></table>
   </span>
   <div style="display:none" id="gameid7" class="togglebody">
     移植者：黑之契约者<br>
@@ -422,7 +1037,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid6')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>eden*</u></td><td align="right">发布日期：2012-02-17</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>eden*</u></td><td class="gametitle_table_td3">发布日期：2012-02-17</td></tr></table>
   </span>
   <div style="display:none" id="gameid6" class="togglebody">
     移植者：黑之契约者<br>
@@ -457,7 +1072,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid5')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>沙耶之歌</u></td><td align="right">发布日期：2012-02-14</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>沙耶之歌</u></td><td class="gametitle_table_td3">发布日期：2012-02-14</td></tr></table>
   </span>
   <div style="display:none" id="gameid5" class="togglebody">
     原发布地址：http://www.yayabo.cn/thread-22387-1.html<br>
@@ -476,7 +1091,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid4')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>悠之空</u></td><td align="right">发布日期：2012-01-22</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>悠之空</u></td><td class="gametitle_table_td3">发布日期：2012-01-22</td></tr></table>
   </span>
   <div style="display:none" id="gameid4" class="togglebody">
     原发布地址：http://www.yayabo.cn/thread-22154-1.html<br>
@@ -509,7 +1124,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid3')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>缘之空</u></td><td align="right">发布日期：2012-01-01</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>缘之空</u></td><td class="gametitle_table_td3">发布日期：2012-01-01</td></tr></table>
   </span>
   <div style="display:none" id="gameid3" class="togglebody">
     原发布地址：http://www.yayabo.cn/thread-21936-1.html<br>
@@ -541,7 +1156,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid2')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>秋之回忆2</u></td><td align="right">发布日期：2011-12-24</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>秋之回忆2</u></td><td class="gametitle_table_td3">发布日期：2011-12-24</td></tr></table>
   </span>
   <div style="display:none" id="gameid2" class="togglebody">
     移植者：chen_xin_ming<br>
@@ -556,7 +1171,7 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
   <span onclick="toggle_visibility('gameid1')" class="toggleheader">
-    <table class="gametitle_table"><tr><td align="left"><u>秋之回忆1</u></td><td align="right">发布日期：2011-08-05</td></tr></table>
+    <table class="gametitle_table"><tr><td class="gametitle_table_td1"><u>秋之回忆1</u></td><td class="gametitle_table_td3">发布日期：2011-08-05</td></tr></table>
   </span>
   <div style="display:none" id="gameid1" class="togglebody">
     移植者：chen_xin_ming<br>
@@ -576,42 +1191,29 @@ border-radius: 5px;">
   </div>
 <!-- ------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------ -->
+  <div class="juan">
+    声明：<br>
+    1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>
+    2. 如果有链接失效或描述不准确，请在贴吧发帖通知。<br>
+  </div>
 </div>
 
 
 <div class="box" style="text-align:center;padding:5px;">
 <a href="https://github.com/pymo/pymo">pymo源码</a>
-<a href="faqhtml">常见问题</a>
+<a href="faq.html">常见问题</a>
 <a href="changelog.html">更新日志</a>
-<a href="http://tieba.baidu.com/f?kw=pymo" target="_blank">贴吧讨论</a>
 <a href="javascript:;" id="about">关于pymo</a>
-<div style="font-size:12px;">Copyright © chen_xin_ming 2011-2013<p>All Rights Reserved</div>
+<div style="font-size:12px;">Copyright © chen_xin_ming 2011-2013<br>All Rights Reserved</div>
 </div> 
 
 
 <script>
 
-/*$(function() {
-          $("img").lazyload({
-             skip_invisible : true});
-      });*/
-
 (function(){
 
-$('#changelog').on('click',function(event){
-	event.preventDefault();
-	$.layer({
-		type : 2,
-		title : ['更新日志',true],
-		offset : ['50px',''],
-		shadeClose : true,
-		area : ['400px','500px'],
-		iframe: {src : 'changelog.html'},
-	});
-});
-
 $('#about').on('click',function(){
-	var html = '<h2>关于pymo</h2>';
+	var html = '<h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>您可以访问pymo.github.io获得游戏制作教程以及下载已经制作好的游戏。<br>pymo的作者为chen_xin_ming</p>';
 
 	var i = $.layer({
 		type: 1,
@@ -627,23 +1229,6 @@ $('#about').on('click',function(){
 		}
 	});
 });
-
-
-$('#suggest').on('click',function(event){
-	event.preventDefault();
-	$.layer({
-		type : 2,
-		fix : false,
-		shade : [0.8 , '#E3E3E3' , true],
-		shadeClose : true,
-		border : [10 , 0.7 , '#272822', true],
-		title : ['',false],
-		offset : ['30px',''],
-		area : ['960px','9500px'],
-		iframe : {src : $(this).attr('href')}
-	});
-});
-
 
 
 //layer_download
@@ -664,26 +1249,6 @@ $('#download_pymo').on('click', function(){
 		}
 	});
 });
-
-//layer_install
-$('#install_pymo').on('click', function(){
-	var html = '<div class="juan"><h2>安装方法</h2><br><p>Android版：</p><p><a href="http://pan.baidu.com/share/link?shareid=401161&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_for_Android.apk/download" target="_blank">下载点二</a></p><br><p>Symbian版 (适合S60v3、S60v5和Symbian^3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401163&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/latest/download" target="_blank">下载点二</a></p><br><p>S60v3 MR版 (适合N73、N80等早期S60v3手机)：</p><p><a href="http://pan.baidu.com/share/link?shareid=401164&uk=857227762" target="_blank">下载点一</a>　<a href="http://sourceforge.net/projects/pymo/files/pymo_0.9/pymo_v0_9_0_S60_MR.zip/download" target="_blank">下载点二</a></p></div>';
-
-	var i = $.layer({
-		type: 1,
-		title: ['',false],
-		closeBtn: ['',true],
-		border : [5, 0.5, '#666', true],
-		offset: ['50px',''],
-		move: ['.juanmove', true],
-		area: ['400px','auto'],
-		shadeClose : true,
-		page: {
-			html: html
-		}
-	});
-});
-
 
 })();
 
