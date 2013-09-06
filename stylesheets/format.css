@@ -21,7 +21,7 @@ pre{font-family:'微软雅黑'}
 
 .juan{ padding:10px; text-align:left;}
 .juan p{line-height:23px;}
-.juan p a{font-size:14px;}
+.juan p a{font-size:14px;padding:0}
 .juanGo, .juanLu{display:inline-block; *display:inline; *zoom:1; margin-right:10px;  line-height:30px; padding:0 15px;}
 .juanGo{border:1px solid #F67600; background-color:#FFA100; color:#fff;}
 .juanGo:hover{background-color:#FFB12F; color:#fff;}
