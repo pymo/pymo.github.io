@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>pymo-手机上的GalGame引擎</title>
+<link href="stylesheets/format.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="images/pymo.ico" type="image/x-icon"/>
+<link rel="Shortcut Icon" href="images/pymo.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="144x144" href="images/pymo-icon-144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="images/pymo-icon-114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="images/pymo-icon-72.png" />
+<link rel="apple-touch-icon" href="images/pymo-icon-57.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=540, initial-scale=0.59, user-scalable=yes"/>
+</head>
+<script src="layer/jquery.min.js"></script>
+<script src="layer/layer.min.js"></script>
+<body>
+
+<div class="box" style="padding:0;
+background: url(images/index_idg.jpg) no-repeat right;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;">
+<pre>
+<div style="margin-left:50px; ">
+<div  align="left" style="text-shadow:white 1px 2px 1px;">
+<h2>pymo，手机上的GalGame引擎</h2>
+软件版本：1.1
+更新时间：2016-01-01
+支持系统：Symbian/Android/Windows
+</div>
+<span class="button" style="background-color:orange;margin-top:20px;margin-left:0px;"><a href="install.html" style="color:#fff">立即下载</a></span><span class="button" style="background-color:#49AAEE;margin-left:20px;"><a href="http://tieba.baidu.com/f?kw=pymo" target="_blank" style="color:#fff">贴吧讨论</a></span>
+</div>
+</pre>
+</div>
+
+<div class="box">
+<h2>游戏列表</h2>
+<!-- ------------------------------------------------------------------------------ -->
+  <div class="juan" id="JStest" onclick="show_download()">
+    您的浏览器禁用了JavaScript, 这可能导致按钮无法点击等问题。<br>
+    为了保障浏览效果，建议你开启JavaScript功能。
+  </div>
+<!-- ------------------------------------------------------------------------------ -->
+GAME_TABLE_HERE
+<!-- ------------------------------------------------------------------------------ -->
+</div>
+
+
+<div class="box" style="text-align:center;padding:5px;">
+<a href="https://github.com/pymo/pymo">pymo源码</a>
+<a href="faq.html">常见问题</a>
+<a href="changelog.html">更新日志</a>
+<a href="javascript:;" id="about">关于pymo</a>
+<div style="font-size:12px;">
+    <script language="JavaScript">
+        var current_year=new Date().getFullYear();
+        document.write("Copyright © chen_xin_ming 2011-"+current_year+"<br>页面最后更新: " + document.lastModified)</script>
+    <a href="http://gostats.com"><img alt="website analysis" src="http://c4.gostats.com/bin/count/a_382390/t_5/i_1/counter.png" style="border-width:0" /></a>
+</div>
+</div> 
+
+<script>
+//1. 根据法律法规和政策，部分游戏不提供下载链接。
+var max_game_num=60;
+document.getElementById("JStest").innerHTML = '说明：<br>1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>2. 如果已提供的链接有失效或描述不准确的情况，请在<a href="http://tieba.baidu.com/p/2567435196">这里回帖通知</a>。';
+var click_counter=0;
+var counter_threshold=9;
+
+(function(){
+$('#about').on('click',function(){
+	var html = '<div class="juan"><h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>pymo是由chen_xin_ming开发的开源软件。pymo遵循BSD许可证，欢迎任何人下载代码或对代码作出改进。<br>如果发现bug，请到<a href="http://tieba.baidu.com/p/2567435196">这里回帖</a>。<br>或者百度帖吧<a href="http://msg.baidu.com/msg/writing?ct=21&cm=1&tn=bmSendMessage&un=chen_xin_ming">私信联系chen_xin_ming</a></p></div>';
+
+	var i = $.layer({
+		type: 1,
+		title: ['',false],
+		closeBtn: ['',true],
+		border : [5, 0.5, '#666', true],
+		offset: ['50px',''],
+		move: ['.juanmove', true],
+		area: ['400px','auto'],
+		shadeClose : true,
+		page: {
+			html: html
+		}
+	});
+});
+
+
+})();
+
+function set_visibility(id) {
+  var e = document.getElementById(id);
+  e.style.display = 'block';
+}
+function unset_visibility(id) {
+  var e = document.getElementById(id);
+  e.style.display = 'none';
+}
+function toggle_visibility(id) {
+  for (var i=1;i<=max_game_num;i++)
+  {
+    if (id=="gameid"+i){
+      var e = document.getElementById(id);
+      if (e.style.display == 'none'){
+        e.style.display = 'block';
+        for ( var  j = 0 ; j < e.childNodes.length; j++ ){
+          var  f =  e.childNodes[j];
+          //lazy load the images in div
+          if (f.attributes && f.getAttribute("class")=="screenshots"){
+            for ( var  k = 0 ; k < f.childNodes.length; k++ ){
+              var  g =  f.childNodes[k];
+              if (g.tagName && g.tagName=="IMG")
+                g.setAttribute("src",g.getAttribute("data-original"));
+            }
+          }
+          //hide the download link of H games
+//          if (f.attributes && f.getAttribute("class")=="dllink"){
+//            if (e.getAttribute("H")=="y" && click_counter<counter_threshold){
+//              f.style.display = "none";
+//            }
+//            else{
+//              f.style.display = "block";
+//            }
+//          }
+        }
+      }
+      else
+        e.style.display = 'none';
+    }
+    else
+      unset_visibility("gameid"+i);
+  }
+}
+function show_download() {
+  if (click_counter<counter_threshold)
+  {
+    click_counter++;
+  }
+  else
+  {
+    document.getElementById("JStest").innerHTML = '<p>如果链接有失效或描述不准确的情况，请在<a href="http://tieba.baidu.com/p/2567435196">这里回帖通知</a>。</p>';
+  }
+}
+
+
+</script>
+</body>
+</html>
