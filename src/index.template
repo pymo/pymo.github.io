@@ -63,7 +63,7 @@ GAME_TABLE_HERE
 <script>
 //1. 根据法律法规和政策，部分游戏不提供下载链接。
 var max_game_num=60;
-document.getElementById("JStest").innerHTML = '说明：<br>1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>2. 如果已提供的链接有失效或描述不准确的情况，请在<a href="http://tieba.baidu.com/p/2567435196">这里回帖通知</a>。';
+document.getElementById("JStest").innerHTML = '说明：<br>1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>2. 如果已提供的链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/4243406146">这里回帖通知</a>。';
 var click_counter=0;
 var counter_threshold=9;
 
@@ -139,7 +139,7 @@ function show_download() {
   }
   else
   {
-    document.getElementById("JStest").innerHTML = '<p>如果链接有失效或描述不准确的情况，请在<a href="http://tieba.baidu.com/p/2567435196">这里回帖通知</a>。</p>';
+    document.getElementById("JStest").innerHTML = '<p>如果链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/4243406146">这里回帖通知</a>。</p>';
   }
 }
 

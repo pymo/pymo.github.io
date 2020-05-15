@@ -189,8 +189,8 @@
     "author": "chr10141996",
     "baidu_folder": "wanhuajing",
     "contains_h": true,
-    "download_link": "",
-    "download_pass": "",
+    "download_link": "https://pan.baidu.com/s/10REz5_z53I9f2WGHHb9gmg",
+    "download_pass": "jjzk",
     "folder": "美少女万华镜",
     "game_id": 50,
     "introduction": "最近刚看完pymo教程，准备移植一个游戏试试看，就选了个文本较小的拔～作。<br>嗯～由于有动态cg，调用资源时内存占用较大，就没做塞班的（其实是我不会。。）。手机性能会影响动态cg读取速度，游戏进行到动态cg时会有明显的停顿。<br>这是日文原版的。。分辨率1280*720<br>游戏解包后没找到音乐鉴赏对应的图片，就没做音乐鉴赏，想听bgm可以直接在bgm文件夹中找<br>游戏中选项全部选完会有一个omake，提醒一下～<br>感谢pymo吧各位前辈的帮助<br>转帖请注明出处",
@@ -200,7 +200,8 @@
     "publish_date": "2014-08-02",
     "publish_site": "http://tieba.baidu.com/p/3203636370",
     "screenshots": [],
-    "title": "美少女万华镜1(日文版)"
+    "title": "美少女万华镜1(日文版)",
+    "unzip_pass": "pymo"
   },
   {
     "author": "nn0951",
