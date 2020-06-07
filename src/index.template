@@ -25,8 +25,8 @@ border-radius: 5px;">
 <div style="margin-left:50px; ">
 <div  align="left" style="text-shadow:white 1px 2px 1px;">
 <h2>pymo，手机上的GalGame引擎</h2>
-软件版本：1.1
-更新时间：2016-01-01
+软件版本：1.2
+更新时间：2020-06-08
 支持系统：Symbian/Android/Windows
 </div>
 <span class="button" style="background-color:orange;margin-top:20px;margin-left:0px;"><a href="install.html" style="color:#fff">立即下载</a></span><span class="button" style="background-color:#49AAEE;margin-left:20px;"><a href="http://tieba.baidu.com/f?kw=pymo" target="_blank" style="color:#fff">贴吧讨论</a></span>
@@ -63,13 +63,13 @@ GAME_TABLE_HERE
 <script>
 //1. 根据法律法规和政策，部分游戏不提供下载链接。
 var max_game_num=60;
-document.getElementById("JStest").innerHTML = '说明：<br>1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>2. 如果已提供的链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/4243406146">这里回帖通知</a>。';
+document.getElementById("JStest").innerHTML = '说明：<br>1. 本列表中的所有游戏均收集自互联网，本站不直接提供下载。<br>2. 如果已提供的链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/6734117583">这里回帖通知</a>。';
 var click_counter=0;
 var counter_threshold=9;
 
 (function(){
 $('#about').on('click',function(){
-	var html = '<div class="juan"><h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>pymo是由chen_xin_ming开发的开源软件。pymo遵循BSD许可证，欢迎任何人下载代码或对代码作出改进。<br>如果发现bug，请到<a href="http://tieba.baidu.com/p/2567435196">这里回帖</a>。<br>或者百度帖吧<a href="http://msg.baidu.com/msg/writing?ct=21&cm=1&tn=bmSendMessage&un=chen_xin_ming">私信联系chen_xin_ming</a></p></div>';
+	var html = '<div class="juan"><h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>pymo是由chen_xin_ming开发的开源软件。pymo遵循BSD许可证，欢迎任何人下载代码或对代码作出改进。<br>如果发现bug，请到<a href="http://tieba.baidu.com/p/6734117583">这里回帖</a>。<br>或者百度帖吧<a href="http://msg.baidu.com/msg/writing?ct=21&cm=1&tn=bmSendMessage&un=chen_xin_ming">私信联系chen_xin_ming</a></p></div>';
 
 	var i = $.layer({
 		type: 1,
@@ -139,7 +139,7 @@ function show_download() {
   }
   else
   {
-    document.getElementById("JStest").innerHTML = '<p>如果链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/4243406146">这里回帖通知</a>。</p>';
+    document.getElementById("JStest").innerHTML = '<p>如果链接有失效或描述不准确的情况，请在<a href="https://tieba.baidu.com/p/6734117583">这里回帖通知</a>。</p>';
   }
 }
 
