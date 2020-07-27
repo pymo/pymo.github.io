@@ -1,5 +1,31 @@
 [
   {
+    "author": "EraldoCoil",
+    "baidu_folder": "nastu",
+    "contains_h": true,
+    "download_link": "https://pan.baidu.com/s/1B6AbZ4-xCUhOJynX82M0sw",
+    "download_pass": "bqve",
+    "folder": "夏之雨",
+    "game_id": 58,
+    "introduction": "【游戏名称】夏之雨<br>【游戏引擎】pymo 1.2<br>【汉化组】姐之雨填坑大队<br>【移植者】EraldoCoil<br>【运行平台】Android, Symbian<br>【游戏容量】android 994MB，塞班600MB<br>【游戏介绍】<br>《夏之雨》为CUBE社于2009年9月25日发行。为该社所发行的第一部作品，并获得“萌えゲーアワード2010”纯爱类游戏的金赏。<br><div class=\"blockquote\">在三橋学園就读的桜井宗介（さくらい そうすけ）。<br>家庭和学園生活虽上多少有些问题，身为女孩子却能像男性友人一样自然交流的女性朋友,宮沢翠（みやざわ みどり），像温柔的姐姐一样的青梅竹马，伊東ひなこ（いとう ひなこ），既是死党又是良好竞争对手的武田一志（たけだ かずし）被这些友人所包围，可以说是过着平凡的学園生活。<br>有一天他回到家里的时候，在家中发现了一名他从未见过的少女。<br>瀬川理香子（せがわ りかこ）——她这样报出了自己的名字。<br>彷佛向周围释放威压一样的有着凛然气质的美少女。对着盯着她出神的宗介，母亲这样向他介绍。<br>「这是你的姐姐哦。虽然你们同岁。」<br>姐姐？同岁的？<br>「前些日子，你的父亲过世了。」<br>在宗介还在年幼时就已离婚的那所不知行踪的父亲。她是父亲的女儿，跟据父亲的遗言她被接到这里来领养。<br>「就是这么一会事，所以帮忙照看她一下。」<br>「要我来!?」<br>「当然喽，对你来说她和你是姐弟关系嘛，对于我来说就是完全没有关系的人了」<br>面对任性地发表言论的母亲。感到迷惑的宗介，理香子开口说道。<br>「只要当我不存在就可以了。我不打算给你们添麻烦。」<br>占据了夏天的梅雨之日。<br>与突然出现的美貌而的同龄姐姐的同居生活开始了。</div><br>【注意】<br>夏之雨的pymo版本仅供Pymo的研究学习使用，不得用于商业目的。因商业目的造成的任何法律问题，移植者不承担任何责任。若无特殊授权，禁止将游戏脚本用于任何PC平台及云平台（或远程服务端）。<br>任何人均享有免费运行本游戏的权利，禁止将其直接或间接用于商业目的。 由于违反以上协议造成的一切问题，由违约者个人承担。下载本移植游戏，即代表您同意以上条款。<br>禁止任何未经授权的组织或个人转载此游戏，也禁止任何组织或个人在未经授权的情况下演绎此游戏（包括但不限于，如，二次移植到其他平台）。<br>",
+    "platforms": [
+      "android",
+      "symbian"
+    ],
+    "publish_date": "2020-07-27",
+    "publish_site": "http://tieba.baidu.com/p/6841507888",
+    "screenshots": [
+      "images/game_screenshot/nastu_1.jpg",
+      "images/game_screenshot/nastu_2.jpg",
+      "images/game_screenshot/nastu_3.jpg",
+      "images/game_screenshot/nastu_4.jpg",
+      "images/game_screenshot/nastu_5.jpg",
+      "images/game_screenshot/nastu_6.jpg"
+    ],
+    "title": "夏之雨",
+    "unzip_pass": "pymo"
+  },
+  {
     "author": "洛州尹",
     "baidu_folder": "FreeFriends2",
     "contains_h": true,
