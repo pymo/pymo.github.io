@@ -27,7 +27,7 @@ border-radius: 5px;">
 <h2>pymo，手机上的GalGame引擎</h2>
 软件版本：1.2
 更新时间：2020-06-08
-支持系统：Symbian/Android/Windows
+支持系统：安卓/塞班/Windows
 </div>
 <span class="button" style="background-color:orange;margin-top:20px;margin-left:0px;"><a href="install.html" style="color:#fff">立即下载</a></span><span class="button" style="background-color:#49AAEE;margin-left:20px;"><a href="http://tieba.baidu.com/f?kw=pymo" target="_blank" style="color:#fff">贴吧讨论</a></span>
 </div>
@@ -69,7 +69,7 @@ var counter_threshold=9;
 
 (function(){
 $('#about').on('click',function(){
-	var html = '<div class="juan"><h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>pymo是由chen_xin_ming开发的开源软件。pymo遵循BSD许可证，欢迎任何人下载代码或对代码作出改进。<br>如果发现bug，请到<a href="http://tieba.baidu.com/p/6734117583">这里回帖</a>。<br>或者百度帖吧<a href="http://msg.baidu.com/msg/writing?ct=21&cm=1&tn=bmSendMessage&un=chen_xin_ming">私信联系chen_xin_ming</a></p></div>';
+	var html = '<div class="juan"><h2>关于pymo</h2><p>pymo (Python Memories Off) 是一个针对手机设计的AVG游戏引擎。可以使您不用懂得编程也可以较为方便地制作出一款简单的AVG游戏。<br>pymo是由chen_xin_ming开发的开源软件。pymo遵循BSD许可证，欢迎任何人下载代码或对代码作出改进。<br>如果发现bug，请到<a href="http://tieba.baidu.com/p/6734117583">这里回帖</a>。<br>或者百度帖吧<a href="https://tieba.baidu.com/home/main?un=chen_xin_ming">私信联系chen_xin_ming</a></p></div>';
 
 	var i = $.layer({
 		type: 1,
