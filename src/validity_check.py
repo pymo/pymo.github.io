@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import csv
 import json
 import os
@@ -28,18 +30,13 @@ class BaiduNetdisk(object):
         except Exception as e:
             return {"code": 0, "status": e.__str__()}
 
-    def anylies(self, link):
+    def analyze(self, link):
         resultDict = self.disabledLink(link)
         if resultDict["code"] == 0:
             print("Exception")
             print(resultDict.get("status"))
         else:
             try:
-                # print(resultDict.get("status").decode('utf-8'))
-                # ak = str(resultDict.get("status"),encoding = "utf8")
-                # print(type(resultDict.get("status")))
-                # for i in range(len(ak)):
-                #     print(ak[i])
                 soup = BeautifulSoup(resultDict.get("status"), 'html.parser') 
                 count = 0
                 for k in soup.find_all('div', class_='share-error-left'):
@@ -56,10 +53,10 @@ game_db=[]
 with open('gamedb.json','r', encoding='utf-8-sig') as fp:
   game_db=json.load(fp)
 for game_entry in game_db:
-  just = BaiduNetdisk().anylies(game_entry['download_link'])
-  if just:
-    print("\n ------- ",game_entry['title'], " OK")
+  valid = BaiduNetdisk().analyze(game_entry['download_link'])
+  if valid:
+    print("OK      ",game_entry['title'])
   else:
-    print("\n ------- ",game_entry['title'], " Invalid")
+    print("Invalid ",game_entry['title'])
 
 
