@@ -40,7 +40,7 @@ class BaiduNetdisk(object):
             try:
                 soup = BeautifulSoup(resultDict.get("status"), 'html.parser') 
                 count = 0
-                for k in soup.find_all('div', class_='share-error-left'):
+                for k in soup.find_all('div', class_='share-error'):
                     count += 1
                 if count == 0:
                     return True
@@ -56,12 +56,15 @@ with open(os.path.join(current_path,'gamedb.json'),'r', encoding='utf-8-sig') as
   game_db = json.load(fp)
 #Failed links will get retried up to 3 times.
 for retry in range(3):
+  print("****** Test round ", retry+1, " ******")
   invalid_games = []
   for game_entry in game_db:
     valid = BaiduNetdisk().analyze(game_entry['download_link'])
     if not valid:
       invalid_games.append(game_entry)
+    print(game_entry['title'], " pass" if valid else " fail")
   game_db = invalid_games
+print("****** Test finished ******")
 if invalid_games:
   email_subject = "pymo game download link broken"
   email_body = "The following games become invalid:\n\n"
